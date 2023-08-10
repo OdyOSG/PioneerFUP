@@ -1,0 +1,599 @@
+cohortId,targetId,targetName,strataId,strataName,cohortType
+101,101,[PIONEER FUP] Newly diagnosed prostate cancer,0,All,Target
+102,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,0,All,Target
+103,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,0,All,Target
+104,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,0,All,Target
+105,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,0,All,Target
+106,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,0,All,Target
+107,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,0,All,Target
+108,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,0,All,Target
+109,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,0,All,Target
+110,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,0,All,Target
+111,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,0,All,Target
+112,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,0,All,Target
+113,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,0,All,Target
+101003012,101,[PIONEER FUP] Newly diagnosed prostate cancer,301,without [PIONEER FUP] Obesity,TwoS
+102003012,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,301,without [PIONEER FUP] Obesity,TwoS
+103003012,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,301,without [PIONEER FUP] Obesity,TwoS
+104003012,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,301,without [PIONEER FUP] Obesity,TwoS
+105003012,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,301,without [PIONEER FUP] Obesity,TwoS
+106003012,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,301,without [PIONEER FUP] Obesity,TwoS
+107003012,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,301,without [PIONEER FUP] Obesity,TwoS
+108003012,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,301,without [PIONEER FUP] Obesity,TwoS
+109003012,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,301,without [PIONEER FUP] Obesity,TwoS
+110003012,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,301,without [PIONEER FUP] Obesity,TwoS
+111003012,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,301,without [PIONEER FUP] Obesity,TwoS
+112003012,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,301,without [PIONEER FUP] Obesity,TwoS
+113003012,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,301,without [PIONEER FUP] Obesity,TwoS
+101003022,101,[PIONEER FUP] Newly diagnosed prostate cancer,302,without [PIONEER FUP] Hypertension,TwoS
+102003022,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,302,without [PIONEER FUP] Hypertension,TwoS
+103003022,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,302,without [PIONEER FUP] Hypertension,TwoS
+104003022,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,302,without [PIONEER FUP] Hypertension,TwoS
+105003022,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,302,without [PIONEER FUP] Hypertension,TwoS
+106003022,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,302,without [PIONEER FUP] Hypertension,TwoS
+107003022,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,302,without [PIONEER FUP] Hypertension,TwoS
+108003022,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,302,without [PIONEER FUP] Hypertension,TwoS
+109003022,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,302,without [PIONEER FUP] Hypertension,TwoS
+110003022,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,302,without [PIONEER FUP] Hypertension,TwoS
+111003022,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,302,without [PIONEER FUP] Hypertension,TwoS
+112003022,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,302,without [PIONEER FUP] Hypertension,TwoS
+113003022,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,302,without [PIONEER FUP] Hypertension,TwoS
+101003032,101,[PIONEER FUP] Newly diagnosed prostate cancer,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+102003032,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+103003032,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+104003032,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+105003032,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+106003032,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+107003032,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+108003032,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+109003032,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+110003032,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+111003032,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+112003032,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+113003032,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,303,"without [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwoS
+101003042,101,[PIONEER FUP] Newly diagnosed prostate cancer,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+102003042,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+103003042,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+104003042,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+105003042,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+106003042,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+107003042,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+108003042,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+109003042,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+110003042,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+111003042,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+112003042,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+113003042,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,304,without [PIONEER FUP] Type 2 diabetes,TwoS
+101003052,101,[PIONEER FUP] Newly diagnosed prostate cancer,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+102003052,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+103003052,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+104003052,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+105003052,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+106003052,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+107003052,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+108003052,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+109003052,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+110003052,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+111003052,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+112003052,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+113003052,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,305,without [PIONEER FUP] Venous tromboembolic events (VTE),TwoS
+101003062,101,[PIONEER FUP] Newly diagnosed prostate cancer,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+102003062,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+103003062,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+104003062,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+105003062,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+106003062,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+107003062,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+108003062,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+109003062,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+110003062,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+111003062,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+112003062,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+113003062,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,306,without [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwoS
+101003072,101,[PIONEER FUP] Newly diagnosed prostate cancer,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+102003072,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+103003072,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+104003072,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+105003072,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+106003072,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+107003072,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+108003072,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+109003072,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+110003072,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+111003072,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+112003072,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+113003072,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,307,without [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwoS
+101003082,101,[PIONEER FUP] Newly diagnosed prostate cancer,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+102003082,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+103003082,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+104003082,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+105003082,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+106003082,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+107003082,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+108003082,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+109003082,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+110003082,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+111003082,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+112003082,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+113003082,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,308,without [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwoS
+101003092,101,[PIONEER FUP] Newly diagnosed prostate cancer,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+102003092,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+103003092,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+104003092,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+105003092,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+106003092,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+107003092,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+108003092,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+109003092,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+110003092,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+111003092,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+112003092,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+113003092,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,309,without [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwoS
+101003102,101,[PIONEER FUP] Newly diagnosed prostate cancer,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+102003102,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+103003102,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+104003102,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+105003102,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+106003102,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+107003102,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+108003102,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+109003102,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+110003102,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+111003102,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+112003102,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+113003102,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,310,"without [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwoS
+101003112,101,[PIONEER FUP] Newly diagnosed prostate cancer,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+102003112,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+103003112,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+104003112,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+105003112,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+106003112,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+107003112,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+108003112,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+109003112,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+110003112,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+111003112,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+112003112,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+113003112,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,311,without [PIONEER FUP] PSA above 20 at Dx FINAL,TwoS
+101003122,101,[PIONEER FUP] Newly diagnosed prostate cancer,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+102003122,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+103003122,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+104003122,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+105003122,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+106003122,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+107003122,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+108003122,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+109003122,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+110003122,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+111003122,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+112003122,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+113003122,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,312,without [PIONEER FUP] PSA below 10 at Dx FINAL,TwoS
+101003132,101,[PIONEER FUP] Newly diagnosed prostate cancer,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+102003132,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+103003132,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+104003132,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+105003132,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+106003132,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+107003132,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+108003132,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+109003132,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+110003132,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+111003132,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+112003132,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+113003132,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,313,without [PIONEER FUP] PSA 10-20 at Dx FINAL,TwoS
+101003142,101,[PIONEER FUP] Newly diagnosed prostate cancer,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+102003142,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+103003142,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+104003142,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+105003142,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+106003142,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+107003142,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+108003142,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+109003142,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+110003142,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+111003142,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+112003142,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+113003142,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,314,without [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwoS
+101003152,101,[PIONEER FUP] Newly diagnosed prostate cancer,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+102003152,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+103003152,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+104003152,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+105003152,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+106003152,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+107003152,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+108003152,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+109003152,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+110003152,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+111003152,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+112003152,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+113003152,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,315,without [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwoS
+101003162,101,[PIONEER FUP] Newly diagnosed prostate cancer,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+102003162,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+103003162,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+104003162,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+105003162,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+106003162,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+107003162,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+108003162,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+109003162,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+110003162,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+111003162,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+112003162,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+113003162,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,316,without [PIONEER FUP] Earliest Gleason Grade 4,TwoS
+101003172,101,[PIONEER FUP] Newly diagnosed prostate cancer,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+102003172,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+103003172,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+104003172,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+105003172,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+106003172,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+107003172,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+108003172,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+109003172,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+110003172,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+111003172,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+112003172,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+113003172,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,317,without [PIONEER FUP] Earliest Gleason Grade 5,TwoS
+101003182,101,[PIONEER FUP] Newly diagnosed prostate cancer,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+102003182,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+103003182,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+104003182,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+105003182,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+106003182,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+107003182,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+108003182,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+109003182,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+110003182,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+111003182,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+112003182,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+113003182,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,318,without [PIONEER FUP] Metastasis stage M1a FINAL,TwoS
+101003192,101,[PIONEER FUP] Newly diagnosed prostate cancer,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+102003192,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+103003192,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+104003192,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+105003192,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+106003192,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+107003192,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+108003192,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+109003192,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+110003192,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+111003192,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+112003192,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+113003192,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,319,without [PIONEER FUP] Metastasis stage M1b FINAL,TwoS
+101003202,101,[PIONEER FUP] Newly diagnosed prostate cancer,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+102003202,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+103003202,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+104003202,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+105003202,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+106003202,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+107003202,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+108003202,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+109003202,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+110003202,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+111003202,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+112003202,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+113003202,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,320,without [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwoS
+101000011,101,[PIONEER FUP] Newly diagnosed prostate cancer,1,with Age < 60,TwS
+102000011,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,1,with Age < 60,TwS
+103000011,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,1,with Age < 60,TwS
+104000011,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,1,with Age < 60,TwS
+105000011,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,1,with Age < 60,TwS
+106000011,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,1,with Age < 60,TwS
+107000011,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,1,with Age < 60,TwS
+108000011,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,1,with Age < 60,TwS
+109000011,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,1,with Age < 60,TwS
+110000011,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,1,with Age < 60,TwS
+111000011,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,1,with Age < 60,TwS
+112000011,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,1,with Age < 60,TwS
+113000011,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,1,with Age < 60,TwS
+101000021,101,[PIONEER FUP] Newly diagnosed prostate cancer,2,with Index year = 2016,TwS
+102000021,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,2,with Index year = 2016,TwS
+103000021,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,2,with Index year = 2016,TwS
+104000021,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,2,with Index year = 2016,TwS
+105000021,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,2,with Index year = 2016,TwS
+106000021,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,2,with Index year = 2016,TwS
+107000021,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,2,with Index year = 2016,TwS
+108000021,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,2,with Index year = 2016,TwS
+109000021,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,2,with Index year = 2016,TwS
+110000021,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,2,with Index year = 2016,TwS
+111000021,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,2,with Index year = 2016,TwS
+112000021,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,2,with Index year = 2016,TwS
+113000021,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,2,with Index year = 2016,TwS
+101000031,101,[PIONEER FUP] Newly diagnosed prostate cancer,3,with CCI = 0,TwS
+102000031,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,3,with CCI = 0,TwS
+103000031,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,3,with CCI = 0,TwS
+104000031,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,3,with CCI = 0,TwS
+105000031,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,3,with CCI = 0,TwS
+106000031,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,3,with CCI = 0,TwS
+107000031,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,3,with CCI = 0,TwS
+108000031,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,3,with CCI = 0,TwS
+109000031,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,3,with CCI = 0,TwS
+110000031,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,3,with CCI = 0,TwS
+111000031,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,3,with CCI = 0,TwS
+112000031,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,3,with CCI = 0,TwS
+113000031,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,3,with CCI = 0,TwS
+101000041,101,[PIONEER FUP] Newly diagnosed prostate cancer,4,with CCI = 1,TwS
+102000041,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,4,with CCI = 1,TwS
+103000041,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,4,with CCI = 1,TwS
+104000041,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,4,with CCI = 1,TwS
+105000041,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,4,with CCI = 1,TwS
+106000041,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,4,with CCI = 1,TwS
+107000041,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,4,with CCI = 1,TwS
+108000041,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,4,with CCI = 1,TwS
+109000041,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,4,with CCI = 1,TwS
+110000041,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,4,with CCI = 1,TwS
+111000041,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,4,with CCI = 1,TwS
+112000041,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,4,with CCI = 1,TwS
+113000041,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,4,with CCI = 1,TwS
+101000051,101,[PIONEER FUP] Newly diagnosed prostate cancer,5,with CCI >= 2,TwS
+102000051,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,5,with CCI >= 2,TwS
+103000051,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,5,with CCI >= 2,TwS
+104000051,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,5,with CCI >= 2,TwS
+105000051,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,5,with CCI >= 2,TwS
+106000051,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,5,with CCI >= 2,TwS
+107000051,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,5,with CCI >= 2,TwS
+108000051,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,5,with CCI >= 2,TwS
+109000051,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,5,with CCI >= 2,TwS
+110000051,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,5,with CCI >= 2,TwS
+111000051,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,5,with CCI >= 2,TwS
+112000051,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,5,with CCI >= 2,TwS
+113000051,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,5,with CCI >= 2,TwS
+101003011,101,[PIONEER FUP] Newly diagnosed prostate cancer,301,with [PIONEER FUP] Obesity,TwS
+102003011,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,301,with [PIONEER FUP] Obesity,TwS
+103003011,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,301,with [PIONEER FUP] Obesity,TwS
+104003011,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,301,with [PIONEER FUP] Obesity,TwS
+105003011,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,301,with [PIONEER FUP] Obesity,TwS
+106003011,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,301,with [PIONEER FUP] Obesity,TwS
+107003011,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,301,with [PIONEER FUP] Obesity,TwS
+108003011,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,301,with [PIONEER FUP] Obesity,TwS
+109003011,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,301,with [PIONEER FUP] Obesity,TwS
+110003011,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,301,with [PIONEER FUP] Obesity,TwS
+111003011,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,301,with [PIONEER FUP] Obesity,TwS
+112003011,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,301,with [PIONEER FUP] Obesity,TwS
+113003011,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,301,with [PIONEER FUP] Obesity,TwS
+101003021,101,[PIONEER FUP] Newly diagnosed prostate cancer,302,with [PIONEER FUP] Hypertension,TwS
+102003021,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,302,with [PIONEER FUP] Hypertension,TwS
+103003021,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,302,with [PIONEER FUP] Hypertension,TwS
+104003021,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,302,with [PIONEER FUP] Hypertension,TwS
+105003021,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,302,with [PIONEER FUP] Hypertension,TwS
+106003021,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,302,with [PIONEER FUP] Hypertension,TwS
+107003021,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,302,with [PIONEER FUP] Hypertension,TwS
+108003021,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,302,with [PIONEER FUP] Hypertension,TwS
+109003021,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,302,with [PIONEER FUP] Hypertension,TwS
+110003021,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,302,with [PIONEER FUP] Hypertension,TwS
+111003021,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,302,with [PIONEER FUP] Hypertension,TwS
+112003021,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,302,with [PIONEER FUP] Hypertension,TwS
+113003021,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,302,with [PIONEER FUP] Hypertension,TwS
+101003031,101,[PIONEER FUP] Newly diagnosed prostate cancer,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+102003031,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+103003031,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+104003031,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+105003031,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+106003031,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+107003031,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+108003031,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+109003031,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+110003031,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+111003031,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+112003031,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+113003031,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,303,"with [PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",TwS
+101003041,101,[PIONEER FUP] Newly diagnosed prostate cancer,304,with [PIONEER FUP] Type 2 diabetes,TwS
+102003041,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,304,with [PIONEER FUP] Type 2 diabetes,TwS
+103003041,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,304,with [PIONEER FUP] Type 2 diabetes,TwS
+104003041,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,304,with [PIONEER FUP] Type 2 diabetes,TwS
+105003041,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,304,with [PIONEER FUP] Type 2 diabetes,TwS
+106003041,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,304,with [PIONEER FUP] Type 2 diabetes,TwS
+107003041,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,304,with [PIONEER FUP] Type 2 diabetes,TwS
+108003041,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,304,with [PIONEER FUP] Type 2 diabetes,TwS
+109003041,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,304,with [PIONEER FUP] Type 2 diabetes,TwS
+110003041,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,304,with [PIONEER FUP] Type 2 diabetes,TwS
+111003041,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,304,with [PIONEER FUP] Type 2 diabetes,TwS
+112003041,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,304,with [PIONEER FUP] Type 2 diabetes,TwS
+113003041,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,304,with [PIONEER FUP] Type 2 diabetes,TwS
+101003051,101,[PIONEER FUP] Newly diagnosed prostate cancer,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+102003051,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+103003051,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+104003051,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+105003051,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+106003051,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+107003051,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+108003051,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+109003051,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+110003051,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+111003051,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+112003051,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+113003051,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,305,with [PIONEER FUP] Venous tromboembolic events (VTE),TwS
+101003061,101,[PIONEER FUP] Newly diagnosed prostate cancer,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+102003061,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+103003061,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+104003061,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+105003061,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+106003061,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+107003061,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+108003061,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+109003061,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+110003061,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+111003061,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+112003061,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+113003061,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,306,with [PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),TwS
+101003071,101,[PIONEER FUP] Newly diagnosed prostate cancer,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+102003071,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+103003071,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+104003071,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+105003071,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+106003071,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+107003071,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+108003071,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+109003071,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+110003071,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+111003071,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+112003071,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+113003071,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,307,with [PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,TwS
+101003081,101,[PIONEER FUP] Newly diagnosed prostate cancer,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+102003081,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+103003081,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+104003081,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+105003081,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+106003081,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+107003081,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+108003081,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+109003081,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+110003081,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+111003081,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+112003081,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+113003081,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,308,with [PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a),TwS
+101003091,101,[PIONEER FUP] Newly diagnosed prostate cancer,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+102003091,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+103003091,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+104003091,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+105003091,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+106003091,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+107003091,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+108003091,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+109003091,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+110003091,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+111003091,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+112003091,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+113003091,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,309,with [PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b),TwS
+101003101,101,[PIONEER FUP] Newly diagnosed prostate cancer,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+102003101,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+103003101,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+104003101,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+105003101,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+106003101,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+107003101,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+108003101,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+109003101,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+110003101,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+111003101,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+112003101,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+113003101,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,310,"with [PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",TwS
+101003111,101,[PIONEER FUP] Newly diagnosed prostate cancer,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+102003111,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+103003111,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+104003111,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+105003111,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+106003111,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+107003111,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+108003111,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+109003111,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+110003111,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+111003111,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+112003111,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+113003111,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,311,with [PIONEER FUP] PSA above 20 at Dx FINAL,TwS
+101003121,101,[PIONEER FUP] Newly diagnosed prostate cancer,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+102003121,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+103003121,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+104003121,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+105003121,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+106003121,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+107003121,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+108003121,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+109003121,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+110003121,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+111003121,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+112003121,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+113003121,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,312,with [PIONEER FUP] PSA below 10 at Dx FINAL,TwS
+101003131,101,[PIONEER FUP] Newly diagnosed prostate cancer,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+102003131,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+103003131,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+104003131,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+105003131,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+106003131,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+107003131,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+108003131,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+109003131,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+110003131,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+111003131,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+112003131,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+113003131,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,313,with [PIONEER FUP] PSA 10-20 at Dx FINAL,TwS
+101003141,101,[PIONEER FUP] Newly diagnosed prostate cancer,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+102003141,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+103003141,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+104003141,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+105003141,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+106003141,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+107003141,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+108003141,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+109003141,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+110003141,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+111003141,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+112003141,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+113003141,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,314,with [PIONEER FUP] Gleason Grade 1 at Dx FINAL,TwS
+101003151,101,[PIONEER FUP] Newly diagnosed prostate cancer,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+102003151,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+103003151,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+104003151,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+105003151,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+106003151,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+107003151,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+108003151,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+109003151,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+110003151,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+111003151,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+112003151,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+113003151,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,315,with [PIONEER FUP] Earliest Gleason Grade 2 - 3,TwS
+101003161,101,[PIONEER FUP] Newly diagnosed prostate cancer,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+102003161,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+103003161,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+104003161,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+105003161,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+106003161,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+107003161,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+108003161,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+109003161,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+110003161,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+111003161,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+112003161,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+113003161,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,316,with [PIONEER FUP] Earliest Gleason Grade 4,TwS
+101003171,101,[PIONEER FUP] Newly diagnosed prostate cancer,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+102003171,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+103003171,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+104003171,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+105003171,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+106003171,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+107003171,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+108003171,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+109003171,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+110003171,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+111003171,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+112003171,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+113003171,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,317,with [PIONEER FUP] Earliest Gleason Grade 5,TwS
+101003181,101,[PIONEER FUP] Newly diagnosed prostate cancer,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+102003181,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+103003181,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+104003181,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+105003181,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+106003181,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+107003181,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+108003181,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+109003181,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+110003181,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+111003181,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+112003181,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+113003181,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,318,with [PIONEER FUP] Metastasis stage M1a FINAL,TwS
+101003191,101,[PIONEER FUP] Newly diagnosed prostate cancer,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+102003191,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+103003191,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+104003191,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+105003191,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+106003191,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+107003191,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+108003191,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+109003191,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+110003191,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+111003191,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+112003191,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+113003191,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,319,with [PIONEER FUP] Metastasis stage M1b FINAL,TwS
+101003201,101,[PIONEER FUP] Newly diagnosed prostate cancer,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+102003201,102,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+103003201,103,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+104003201,104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+105003201,105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+106003201,106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+107003201,107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+108003201,108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+109003201,109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+110003201,110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+111003201,111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+112003201,112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS
+113003201,113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,320,with [PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,TwS

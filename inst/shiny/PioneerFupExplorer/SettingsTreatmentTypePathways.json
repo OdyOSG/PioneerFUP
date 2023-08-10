@@ -1,0 +1,25 @@
+{
+	"diagnosisCohort" : {
+		"id" : 101,
+		"name" : "[PIONEER FUP] Newly diagnosed prostate cancer",
+		"useStratifiedCohortInAnalysis" : true
+	},
+	"treatmentCohorts" : [
+		{
+			"id" : 102,
+			"name" : "[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt"
+		},
+		{
+			"id" : 103,
+			"name" : "[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt"
+		},
+		{
+			"id" : 104,
+			"name" : "[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt"
+		},
+		{
+			"id" : 106,
+			"name" : "[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt"
+		}
+	]
+}

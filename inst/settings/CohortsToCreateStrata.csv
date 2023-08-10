@@ -1,0 +1,21 @@
+name,atlasName,atlasId,cohortId
+301,[PIONEER FUP] Obesity,282,301
+302,[PIONEER FUP] Hypertension,284,302
+303,"[PIONEER FUP] Cardiovascular events (CVE; myocardial infarction, stroke)",286,303
+304,[PIONEER FUP] Type 2 diabetes,287,304
+305,[PIONEER FUP] Venous tromboembolic events (VTE),288,305
+306,[PIONEER FUP] Respiratory disease (chronic obstructive pulmonary disease (COPD) or asthma),290,306
+307,[PIONEER FUP] Family history of Prostate cancer or family history of germline mutations,292,307
+308,"[PIONEER FUP] EAU risk group at diagnosis low-risk (PSA <10 ng/ml AND (Gleason score 6 OR grade group 1) AND c1/cT2a)",52,308
+309,"[PIONEER FUP] EAU risk group at diagnosis intermediate-risk (PSA 10-20 ng/ml OR (Gleason score 7 OR grade group 2-3) OR cT2b)",54,309
+310,"[PIONEER FUP] EAU risk group at diagnosis high-risk (PSA >20 ng/ml OR (Gleason score 8-10 OR grade group 4-5) OR cT2c or cT3, cT4)",53,310
+311,[PIONEER FUP] PSA above 20 at Dx FINAL,398,311
+312,[PIONEER FUP] PSA below 10 at Dx FINAL,410,312
+313,[PIONEER FUP] PSA 10-20 at Dx FINAL,411,313
+314,[PIONEER FUP] Gleason Grade 1 at Dx FINAL,326,314
+315,[PIONEER FUP] Earliest Gleason Grade 2 - 3,329,315
+316,[PIONEER FUP] Earliest Gleason Grade 4,330,316
+317,[PIONEER FUP] Earliest Gleason Grade 5,331,317
+318,[PIONEER FUP] Metastasis stage M1a FINAL,441,318
+319,[PIONEER FUP] Metastasis stage M1b FINAL,303,319
+320,[PIONEER FUP] Strata Cohort S26 Metastasis stage M1c,304,320

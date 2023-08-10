@@ -1,0 +1,6 @@
+generationScript,name,lbOperator,lbStrataValue,ubOperator,ubStrataValue,cohortId
+strata/StratifyByAge.sql,Age < 60,>,0,<,60,1
+strata/StratifyByIndex.sql,Index year = 2016,>=,'2016-01-01',<=,'2016-12-31',2
+strata/StratifyByCharlsonIndex.sql,CCI = 0,=,0,,,3
+strata/StratifyByCharlsonIndex.sql,CCI = 1,=,1,,,4
+strata/StratifyByCharlsonIndex.sql,CCI >= 2,>=,2,,,5
