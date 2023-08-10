@@ -142,21 +142,27 @@ shinyServer(function(input, output, session) {
     targetCohort$targetId[targetCohort$targetName %in% input$targetTimeToEvent]
   })
   
-  cohortIdTreatmentPatterns <- reactive({
-    unlist(cohortXref[cohortXref$targetId %in% targetCohortIdTreatmentPatterns() &
-                        cohortXref$strataName %in% input$strataTreatmentPatterns,c("cohortId")]
-    )
-  })
+  # cohortIdTreatmentPatterns <- reactive({
+  #   unlist(cohortXref[cohortXref$targetId %in% targetCohortIdTreatmentPatterns() &
+  #                       cohortXref$strataName %in% input$strataTreatmentPatterns,c("cohortId")]
+  #   )
+  # })
   
   cohortIdTreatmentTypePatterns <- reactive({
     unlist(cohortXref[cohortXref$targetId %in% 101 &
                         cohortXref$strataName %in% input$strataTreatmentTypePatterns,c("cohortId")]
     )
   })
-
-  targetCohortIdTreatmentPatterns <- reactive({
-    targetCohort$targetId[targetCohort$targetName %in% input$targetTreatmentPatterns]
+  
+  cohortIdTreatmentModalityPatterns <- reactive({
+    unlist(cohortXref[cohortXref$targetId %in% 101 &
+                        cohortXref$strataName %in% input$strataTreatmentModalityPatterns,c("cohortId")]
+    )
   })
+
+  # targetCohortIdTreatmentPatterns <- reactive({
+  #   targetCohort$targetId[targetCohort$targetName %in% input$targetTreatmentPatterns]
+  # })
 
   cohortIdMetricsDistribution <- reactive({
     unlist(cohortXref[cohortXref$targetId %in% targetCohortIdMetricsDistribution() &
@@ -726,109 +732,109 @@ shinyServer(function(input, output, session) {
   )
   
 
-    # Treatment Patterns ---------------------
-  output$treatmentPatternsHeader <- renderText({
-    paste(input$targetTreatmentPatterns, input$strataTreatmentPatterns, sep = " ")
-  })
-  
-  
-  sankeyData <- reactive({
-    target_id <- andrData$cohort_count %>%
-      dplyr::filter(databaseId %in% !!input$databasesTreatmentPatterns, cohortId %in% !!cohortIdTreatmentPatterns()) %>%
-      dplyr::pull(cohortId)
-    
-    if (length(target_id) == 0) {
-      count <- 0
-    }
-    else{
-      count <- andrData$cohort_count %>% dplyr::filter(cohortId == target_id) %>% dplyr::pull(cohortEntries)
-    }
-    
-    if (count > 30) {
-      sankeyData <- andrData$treatment_sankey %>%
-        dplyr::filter(cohortId == target_id, databaseId == !!input$databasesTreatmentPatterns) %>%
-        dplyr::collect()
-      return(sankeyData)
-    }
-    return(data.frame())
-  })
-  
-  # Sankey
-  sendSankeyData <- function(){
-    data <- sankeyData()
-    jsonData <- jsonlite::toJSON(data, pretty = TRUE)
-    session$sendCustomMessage(type = "jsondata_treatment", jsonData)
-  }
-
-  
-  observeEvent(input$databasesTreatmentPatterns, {
-    sendSankeyData()
-  })
-
-  observeEvent(input$targetTreatmentPatterns, {
-    sendSankeyData()
-  })
-
-  observeEvent(input$strataTreatmentPatterns, {
-    sendSankeyData()
-  })
-  
-  
-  #Sankey Table
-  output$dlSankeyData <- downloadHandler(
-    filename = function() {
-      paste0(paste(input$targetTreatmentPatterns, input$strataTreatmentPatterns, sep = " "), "_Sankey.csv")
-    },
-    content = function(file) {
-      dlSankeyData <- sankeyData() %>% 
-        dplyr::select(sourceName, targetName, value) %>% 
-        dplyr::arrange(sourceName, desc(value))
-      write.csv(dlSankeyData, file)
-    }
-  )
-  
-  output$sankeyTable <- renderDataTable({
-    data <- sankeyData()
-    if(nrow(data > 30)){
-      DT::datatable(
-        data %>% 
-          dplyr::select(sourceName, targetName, value) %>% 
-          dplyr::arrange(sourceName, desc(value)),
-        options = list(pageLength = 25))
-    }
-    else(
-      DT::datatable(data)
-    )
-  })
-  
-  #KM Time To Treatment Switch -----------------------
-  output$timeToTreatmentSwitchPlot <- renderPlot({
-    target_id <- andrData$cohort_count %>%
-      dplyr::filter(databaseId %in% !!input$databasesTreatmentPatterns, cohortId %in% !!cohortIdTreatmentPatterns()) %>%
-      dplyr::pull(cohortId)
-    
-    if (length(target_id) == 0 | is.null(input$KMPlot)) { ggplot2::ggplot() }
-    
-    targetIdTimeToTreatmentSwitchData <- andrData$cohort_time_to_treatment_switch %>% 
-      dplyr::filter(targetId == target_id, databaseId == !!input$databasesTreatmentPatterns) %>%
-      dplyr::collect()
-    
-    targetIdTimeToTreatmentSwitchData <- targetIdTimeToTreatmentSwitchData %>%
-      dplyr::select(time, surv, n.censor, n.event, n.risk, upper, lower) 
-    targetIdTimeToTreatmentSwitchData$strata <- 'Time To Treatment Switch'
-    
-    color_map = c(' ' = "#838383")
-    ggsurvplot_core(targetIdTimeToTreatmentSwitchData,
-                    risk.table = "nrisk_cumcensor",
-                    palette = color_map,
-                    legend.labs = ' ',
-                    cmap = color_map,
-                    conf.int = TRUE,
-                    legend.title = ' ',
-                    ylim = c(min(targetIdTimeToTreatmentSwitchData$lower), 1),
-                    ggtheme = ggplot2::theme_bw()
-    )
-  })
+  #   # Treatment Patterns ---------------------
+  # output$treatmentPatternsHeader <- renderText({
+  #   paste(input$targetTreatmentPatterns, input$strataTreatmentPatterns, sep = " ")
+  # })
+  # 
+  # 
+  # sankeyData <- reactive({
+  #   target_id <- andrData$cohort_count %>%
+  #     dplyr::filter(databaseId %in% !!input$databasesTreatmentPatterns, cohortId %in% !!cohortIdTreatmentPatterns()) %>%
+  #     dplyr::pull(cohortId)
+  #   
+  #   if (length(target_id) == 0) {
+  #     count <- 0
+  #   }
+  #   else{
+  #     count <- andrData$cohort_count %>% dplyr::filter(cohortId == target_id) %>% dplyr::pull(cohortEntries)
+  #   }
+  #   
+  #   if (count > 30) {
+  #     sankeyData <- andrData$treatment_sankey %>%
+  #       dplyr::filter(cohortId == target_id, databaseId == !!input$databasesTreatmentPatterns) %>%
+  #       dplyr::collect()
+  #     return(sankeyData)
+  #   }
+  #   return(data.frame())
+  # })
+  # 
+  # # Sankey
+  # sendSankeyData <- function(){
+  #   data <- sankeyData()
+  #   jsonData <- jsonlite::toJSON(data, pretty = TRUE)
+  #   session$sendCustomMessage(type = "jsondata_treatment", jsonData)
+  # }
+  # 
+  # 
+  # observeEvent(input$databasesTreatmentPatterns, {
+  #   sendSankeyData()
+  # })
+  # 
+  # observeEvent(input$targetTreatmentPatterns, {
+  #   sendSankeyData()
+  # })
+  # 
+  # observeEvent(input$strataTreatmentPatterns, {
+  #   sendSankeyData()
+  # })
+  # 
+  # 
+  # #Sankey Table
+  # output$dlSankeyData <- downloadHandler(
+  #   filename = function() {
+  #     paste0(paste(input$targetTreatmentPatterns, input$strataTreatmentPatterns, sep = " "), "_Sankey.csv")
+  #   },
+  #   content = function(file) {
+  #     dlSankeyData <- sankeyData() %>% 
+  #       dplyr::select(sourceName, targetName, value) %>% 
+  #       dplyr::arrange(sourceName, desc(value))
+  #     write.csv(dlSankeyData, file)
+  #   }
+  # )
+  # 
+  # output$sankeyTable <- renderDataTable({
+  #   data <- sankeyData()
+  #   if(nrow(data > 30)){
+  #     DT::datatable(
+  #       data %>% 
+  #         dplyr::select(sourceName, targetName, value) %>% 
+  #         dplyr::arrange(sourceName, desc(value)),
+  #       options = list(pageLength = 25))
+  #   }
+  #   else(
+  #     DT::datatable(data)
+  #   )
+  # })
+  # 
+  # #KM Time To Treatment Switch -----------------------
+  # output$timeToTreatmentSwitchPlot <- renderPlot({
+  #   target_id <- andrData$cohort_count %>%
+  #     dplyr::filter(databaseId %in% !!input$databasesTreatmentPatterns, cohortId %in% !!cohortIdTreatmentPatterns()) %>%
+  #     dplyr::pull(cohortId)
+  #   
+  #   if (length(target_id) == 0 | is.null(input$KMPlot)) { ggplot2::ggplot() }
+  #   
+  #   targetIdTimeToTreatmentSwitchData <- andrData$cohort_time_to_treatment_switch %>% 
+  #     dplyr::filter(targetId == target_id, databaseId == !!input$databasesTreatmentPatterns) %>%
+  #     dplyr::collect()
+  #   
+  #   targetIdTimeToTreatmentSwitchData <- targetIdTimeToTreatmentSwitchData %>%
+  #     dplyr::select(time, surv, n.censor, n.event, n.risk, upper, lower) 
+  #   targetIdTimeToTreatmentSwitchData$strata <- 'Time To Treatment Switch'
+  #   
+  #   color_map = c(' ' = "#838383")
+  #   ggsurvplot_core(targetIdTimeToTreatmentSwitchData,
+  #                   risk.table = "nrisk_cumcensor",
+  #                   palette = color_map,
+  #                   legend.labs = ' ',
+  #                   cmap = color_map,
+  #                   conf.int = TRUE,
+  #                   legend.title = ' ',
+  #                   ylim = c(min(targetIdTimeToTreatmentSwitchData$lower), 1),
+  #                   ggtheme = ggplot2::theme_bw()
+  #   )
+  # })
   
   
   
@@ -889,7 +895,7 @@ shinyServer(function(input, output, session) {
     if (length(target_id) == 0 | is.null(input$KMPlot)) { ggplot2::ggplot() }
     
     eventName <- input$TypeTreatmentTypePatterns
-    event_id <- treatmentCohorts %>% filter(name == eventName) %>% dplyr::pull(id)
+    event_id <- treatmentCohorts %>% dplyr::filter(name == eventName) %>% dplyr::pull(id)
     
     timeToTreatmentType <- andrData$treatment_type_time_to_event %>%
       dplyr::filter(targetId == target_id, databaseId == !!input$databasesTreatmentTypePatterns, eventId == event_id) %>%
@@ -916,7 +922,89 @@ shinyServer(function(input, output, session) {
   
   
 
+  # Treatment Modality Patterns ---------------------
+  modalitySankeyData <- reactive({
+    target_id <- andrData$cohort_count %>%
+      dplyr::filter(databaseId %in% !!input$databasesTreatmentModalityPatterns, cohortId %in% !!cohortIdTreatmentModalityPatterns()) %>%
+      dplyr::pull(cohortId)
+
+    sankeyData <- andrData$treatment_modality_pathways %>%
+      dplyr::filter(sourceId == target_id, databaseId == !!input$databasesTreatmentModalityPatterns) %>%
+      dplyr::collect()
+    return(sankeyData)
+  })
+
+  # Sankey
+  sendModalitySankeyData <- function(){
+    data <- modalitySankeyData()
+    jsonData <- jsonlite::toJSON(data, pretty = TRUE)
+    session$sendCustomMessage(type = "jsondata_modality", jsonData)
+  }
+
+  observeEvent(input$databasesTreatmentModalityPatterns, {
+    sendModalitySankeyData()
+  })
+
+  observeEvent(input$strataTreatmentModalityPatterns, {
+    sendModalitySankeyData()
+  })
+
+
+  output$modalitySankeyData <- renderDataTable({
+    data <- modalitySankeyData()
+    if(nrow(data > 30)){
+      DT::datatable(
+        data %>%
+          dplyr::select(sourceName, targetName, value) %>%
+          dplyr::arrange(sourceName, desc(value)),
+        options = list(pageLength = 25))
+    }
+    else(
+      DT::datatable(data)
+    )
+  })
   
+  # Treatment Modality Time To Event ---------------------
+  output$timeToModalityHeader <- renderText({
+    paste('Time to ', input$ModalityTreatmentTypePatterns)
+  })
+
+  output$timeToTreatmentModalityPlot <- renderPlot({
+    target_id <- andrData$cohort_count %>%
+      dplyr::filter(databaseId %in% !!input$databasesTreatmentModalityPatterns, cohortId %in% !!cohortIdTreatmentModalityPatterns()) %>%
+      dplyr::pull(cohortId)
+
+    if (length(target_id) == 0 | is.null(input$KMPlot)) { ggplot2::ggplot() }
+
+    eventName <- input$TypeTreatmentModalityPatterns
+    event_id <- andrData$cohort %>%
+           dplyr::filter(cohortId %in% c(107,108, 110, 111, 112, 113)) %>%
+           dplyr::filter(cohortName == eventName) %>%
+           dplyr::pull(cohortId)
+
+    timeToTreatmentModality <- andrData$treatment_modality_time_to_event %>%
+      dplyr::filter(targetId == target_id, databaseId == !!input$databasesTreatmentModalityPatterns, eventId == event_id) %>%
+      dplyr::collect()
+
+    timeToTreatmentModality <- timeToTreatmentModality %>%
+      dplyr::select(time, surv, n.censor, n.event, n.risk, upper, lower)
+    timeToTreatmentModality$strata <- paste('Time To ', eventName)
+
+    color_map = c(' ' = "#838383")
+    ggsurvplot_core(timeToTreatmentModality,
+                    risk.table = "nrisk_cumcensor",
+                    palette = color_map,
+                    legend.labs = ' ',
+                    cmap = color_map,
+                    conf.int = TRUE,
+                    pval = TRUE,
+                    surv.median.line = 'hv',
+                    legend.title = ' ',
+                    ylim = c(min(timeToTreatmentModality$lower), 1),
+                    ggtheme = ggplot2::theme_bw()
+    )
+  })
+    
   
 
   # Database Info ------------------

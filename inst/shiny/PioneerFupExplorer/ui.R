@@ -44,8 +44,9 @@ dashboardPage(
                 if (length(andrData$cohort_time_to_event) > 0) addInfo(menuItem("Time To Event", tabName = "timeToEvent"), "cohortCountsInfo"),
                 if (length(andrData$metrics_distribution) > 0) addInfo(menuItem("Metrics Distribution", tabName = "metricsDistribution"), "cohortsCountsInfo"),
                 if (length(andrData$covariate_value) > 0) addInfo(menuItem("Compare Cohort Char.", tabName = "compareCohortCharacterization"), "compareCohortCharacterizationInfo"),
-                if (TRUE) addInfo(menuItem("Treatment patterns", tabName = "treatmentPatterns"), "treatmentPatternsInfo"),
+                #if (TRUE) addInfo(menuItem("Treatment patterns", tabName = "treatmentPatterns"), "treatmentPatternsInfo"),
                 if (length(andrData$treatment_type_pathways) > 0) addInfo(menuItem("Treatment Type Patterns", tabName = "treatmentTypePatterns"), "treatmentTypePatternsInfo"),
+                if (length(andrData$treatment_modality_pathways) > 0) addInfo(menuItem("Treatment Modality Patterns", tabName = "treatmentModalityPatterns"), "treatmentModalityPatternsInfo"),
                 menuItem("Database information", tabName = "databaseInformation"), 
                 menuItem("Change Log", tabName = "changeLog"),
                 conditionalPanel(condition = "input.tabs=='compareCohortCharacterization'",
@@ -113,23 +114,23 @@ dashboardPage(
                                                            multiple = FALSE)
                 ),
                 
-                conditionalPanel(condition = "input.tabs=='treatmentPatterns'",
-                                 shinyWidgets::pickerInput("databasesTreatmentPatterns", "Database",
-                                                           choices = database$databaseId,
-                                                           selected = database$databaseId,
-                                                           options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
-                                                           multiple = FALSE),
-                                 shinyWidgets::pickerInput("targetTreatmentPatterns", "Cohort",
-                                                           choices = targetCohort$targetName,
-                                                           selected = 'All',
-                                                           options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
-                                                           multiple = FALSE),
-                                 shinyWidgets::pickerInput("strataTreatmentPatterns", "Strata",
-                                                           choices = strataCohort$strataName,
-                                                           selected = 'All',
-                                                           options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
-                                                           multiple = FALSE)
-                ),
+                # conditionalPanel(condition = "input.tabs=='treatmentPatterns'",
+                #                  shinyWidgets::pickerInput("databasesTreatmentPatterns", "Database",
+                #                                            choices = database$databaseId,
+                #                                            selected = database$databaseId,
+                #                                            options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
+                #                                            multiple = FALSE),
+                #                  shinyWidgets::pickerInput("targetTreatmentPatterns", "Cohort",
+                #                                            choices = targetCohort$targetName,
+                #                                            selected = 'All',
+                #                                            options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
+                #                                            multiple = FALSE),
+                #                  shinyWidgets::pickerInput("strataTreatmentPatterns", "Strata",
+                #                                            choices = strataCohort$strataName,
+                #                                            selected = 'All',
+                #                                            options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
+                #                                            multiple = FALSE)
+                # ),
                 
                 conditionalPanel(condition = "input.tabs=='treatmentTypePatterns'",
                                  shinyWidgets::pickerInput("databasesTreatmentTypePatterns", "Database",
@@ -149,7 +150,29 @@ dashboardPage(
                                                            multiple = FALSE)
                 ),
                 
-                conditionalPanel(condition = "input.tabs!='about' & input.tabs!='cohorts' & input.tabs!='cohortCounts' & input.tabs!='timeToEvent' & input.tabs!='metricsDistribution' & input.tabs!='treatmentPatterns' & input.tabs!='treatmentTypePatterns' & input.tabs!='databaseInformation' & input.tabs!='changeLog'" ,
+                
+                conditionalPanel(condition = "input.tabs=='treatmentModalityPatterns'",
+                                 shinyWidgets::pickerInput("databasesTreatmentModalityPatterns", "Database",
+                                                           choices = database$databaseId,
+                                                           selected = database$databaseId,
+                                                           options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
+                                                           multiple = FALSE),
+                                 shinyWidgets::pickerInput("strataTreatmentModalityPatterns", "Strata",
+                                                           choices = strataCohort$strataName,
+                                                           selected = 'All',
+                                                           options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
+                                                           multiple = FALSE),
+                                 shinyWidgets::pickerInput("TypeTreatmentModalityPatterns", "Treatment Modality",
+                                                           choices = andrData$cohort %>%
+                                                             dplyr::filter(cohortId %in% c(107,108, 110, 111, 112, 113)) %>%
+                                                             dplyr::select(cohortName) %>%
+                                                             dplyr::pull(),
+                                                           selected = 'All',
+                                                           options = shinyWidgets::pickerOptions(actionsBox = TRUE, liveSearch = TRUE, dropupAuto = FALSE),
+                                                           multiple = FALSE)
+                ),
+                
+                conditionalPanel(condition = "input.tabs!='about' & input.tabs!='cohorts' & input.tabs!='cohortCounts' & input.tabs!='timeToEvent' & input.tabs!='metricsDistribution' & input.tabs!='treatmentTypePatterns' & input.tabs!='treatmentModalityPatterns' & input.tabs!='databaseInformation' & input.tabs!='changeLog'" ,
                                  shinyWidgets::pickerInput("targetCohort", "Cohort (Target)",
                                                            choices = characterizationTargetCohort$targetName,
                                                            selected = targetName,
@@ -202,6 +225,7 @@ dashboardPage(
       tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"),
       tags$script(src = "js/pathways.js"),
       tags$script(src = "js/typePathways.js"),
+      tags$script(src = "js/modalityPathways.js"),
       tags$script(src = "js/saveSvgAsPng.js")
     ),
     ### changing theme
@@ -286,28 +310,30 @@ dashboardPage(
                                )
               )
       ),
-      tabItem(tabName = "treatmentPatterns",
-               h4(textOutput('treatmentPatternsHeader')),
-               div(class = 'treatment-patterns-container',
-                   div(
-                     h5('Treatment Time To Treatment Switch'),
-                     plotOutput("timeToTreatmentSwitchPlot", height = 560, width = 900)),
-                   div(
-                     h5('Treatment Switch Pathways'),
-                     div(class = 'sankey-container',
-                        actionButton("save_plot", "Save plot"), 
-                        uiOutput("pathwaysD3"),
-                        downloadButton("dlSankeyData", "Download Sankey Table"),
-                        dataTableOutput("sankeyTable")
-                        )
-                     )
-                  )
-      ),
+      
+      # tabItem(tabName = "treatmentPatterns",
+      #          h4(textOutput('treatmentPatternsHeader')),
+      #          div(class = 'treatment-patterns-container',
+      #              div(
+      #                h5('Treatment Time To Treatment Switch'),
+      #                plotOutput("timeToTreatmentSwitchPlot", height = 560, width = 900)),
+      #              div(
+      #                h5('Treatment Switch Pathways'),
+      #                div(class = 'sankey-container',
+      #                   actionButton("save_plot", "Save plot"), 
+      #                   uiOutput("pathwaysD3"),
+      #                   downloadButton("dlSankeyData", "Download Sankey Table"),
+      #                   dataTableOutput("sankeyTable")
+      #                   )
+      #                )
+      #             )
+      # ),
+      
       tabItem(tabName = "treatmentTypePatterns",
               h4('Treatment Type Patterns'),
               div(class = 'treatment-patterns-container',
                   div(
-                    h5(textOutput('timeToEventHeader')),
+                    h5(textOutput('timeToTypeHeader')),
                     plotOutput("timeToTreatmentTypePlot", height = 560, width = 900)),
                   div(
                     h5('Treatment Type Pathways'),
@@ -319,6 +345,23 @@ dashboardPage(
                      )
                   #)
               ))
+      ),
+      tabItem(tabName = "treatmentModalityPatterns",
+              h4('Treatment Modality Patterns'),
+              div(class = 'treatment-patterns-container',
+                  div(
+                    h5(textOutput('timeToModalityHeader')),
+                    plotOutput("timeToTreatmentModalityPlot", height = 560, width = 900)),
+                  div(
+                    h5('Treatment Modality Pathways'),
+                    div(class = 'sankey-container',
+                        #actionButton("save_type_plot", "Save plot"),
+                        uiOutput("modalityPathwaysD3"),
+                        # downloadButton("dlSankeyData", "Download Sankey Table")
+                        dataTableOutput("modalitySankeyData")
+                    )
+                    #)
+                  ))
       ),
       tabItem(tabName = "databaseInformation",
               downloadButton("dlDatabaseInformation", "Download Data"),
