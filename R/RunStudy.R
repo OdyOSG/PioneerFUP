@@ -240,7 +240,7 @@ runStudy <- function(connectionDetails = NULL,
     warnOnMissingParameters = TRUE,
     cohort_database_schema = cohortDatabaseSchema)
   sql <- paste0(sql, sqlAggreg)
-  metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
+  metrics <- DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T)
 
 
 
