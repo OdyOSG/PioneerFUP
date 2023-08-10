@@ -12,58 +12,149 @@ targetId,strataId,cohortId,cohortType,name
 111,1,111000011,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Age < 60
 112,1,112000011,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Age < 60
 113,1,113000011,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Age < 60
-101,2,101000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Index year = 2016
-102,2,102000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Index year = 2016
-103,2,103000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Index year = 2016
-104,2,104000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Index year = 2016
-105,2,105000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Index year = 2016
-106,2,106000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Index year = 2016
-107,2,107000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Index year = 2016
-108,2,108000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Index year = 2016
-109,2,109000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Index year = 2016
-110,2,110000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Index year = 2016
-111,2,111000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Index year = 2016
-112,2,112000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Index year = 2016
-113,2,113000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Index year = 2016
-101,3,101000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with CCI = 0
-102,3,102000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with CCI = 0
-103,3,103000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with CCI = 0
-104,3,104000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with CCI = 0
-105,3,105000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with CCI = 0
-106,3,106000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with CCI = 0
-107,3,107000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with CCI = 0
-108,3,108000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with CCI = 0
-109,3,109000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with CCI = 0
-110,3,110000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with CCI = 0
-111,3,111000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with CCI = 0
-112,3,112000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with CCI = 0
-113,3,113000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with CCI = 0
-101,4,101000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with CCI = 1
-102,4,102000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with CCI = 1
-103,4,103000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with CCI = 1
-104,4,104000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with CCI = 1
-105,4,105000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with CCI = 1
-106,4,106000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with CCI = 1
-107,4,107000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with CCI = 1
-108,4,108000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with CCI = 1
-109,4,109000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with CCI = 1
-110,4,110000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with CCI = 1
-111,4,111000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with CCI = 1
-112,4,112000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with CCI = 1
-113,4,113000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with CCI = 1
-101,5,101000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with CCI >= 2
-102,5,102000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with CCI >= 2
-103,5,103000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with CCI >= 2
-104,5,104000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with CCI >= 2
-105,5,105000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with CCI >= 2
-106,5,106000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with CCI >= 2
-107,5,107000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with CCI >= 2
-108,5,108000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with CCI >= 2
-109,5,109000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with CCI >= 2
-110,5,110000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with CCI >= 2
-111,5,111000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with CCI >= 2
-112,5,112000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with CCI >= 2
-113,5,113000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with CCI >= 2
+101,2,101000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Age 60 - 69
+102,2,102000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Age 60 - 69
+103,2,103000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Age 60 - 69
+104,2,104000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Age 60 - 69
+105,2,105000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Age 60 - 69
+106,2,106000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Age 60 - 69
+107,2,107000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Age 60 - 69
+108,2,108000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Age 60 - 69
+109,2,109000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Age 60 - 69
+110,2,110000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Age 60 - 69
+111,2,111000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Age 60 - 69
+112,2,112000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Age 60 - 69
+113,2,113000021,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Age 60 - 69
+101,3,101000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Age 70 - 79
+102,3,102000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Age 70 - 79
+103,3,103000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Age 70 - 79
+104,3,104000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Age 70 - 79
+105,3,105000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Age 70 - 79
+106,3,106000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Age 70 - 79
+107,3,107000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Age 70 - 79
+108,3,108000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Age 70 - 79
+109,3,109000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Age 70 - 79
+110,3,110000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Age 70 - 79
+111,3,111000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Age 70 - 79
+112,3,112000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Age 70 - 79
+113,3,113000031,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Age 70 - 79
+101,4,101000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Age >= 80
+102,4,102000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Age >= 80
+103,4,103000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Age >= 80
+104,4,104000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Age >= 80
+105,4,105000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Age >= 80
+106,4,106000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Age >= 80
+107,4,107000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Age >= 80
+108,4,108000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Age >= 80
+109,4,109000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Age >= 80
+110,4,110000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Age >= 80
+111,4,111000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Age >= 80
+112,4,112000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Age >= 80
+113,4,113000041,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Age >= 80
+101,5,101000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Index year = 2016
+102,5,102000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Index year = 2016
+103,5,103000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Index year = 2016
+104,5,104000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Index year = 2016
+105,5,105000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Index year = 2016
+106,5,106000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Index year = 2016
+107,5,107000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Index year = 2016
+108,5,108000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Index year = 2016
+109,5,109000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Index year = 2016
+110,5,110000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Index year = 2016
+111,5,111000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Index year = 2016
+112,5,112000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Index year = 2016
+113,5,113000051,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Index year = 2016
+101,6,101000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Index year = 2017
+102,6,102000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Index year = 2017
+103,6,103000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Index year = 2017
+104,6,104000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Index year = 2017
+105,6,105000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Index year = 2017
+106,6,106000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Index year = 2017
+107,6,107000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Index year = 2017
+108,6,108000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Index year = 2017
+109,6,109000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Index year = 2017
+110,6,110000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Index year = 2017
+111,6,111000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Index year = 2017
+112,6,112000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Index year = 2017
+113,6,113000061,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Index year = 2017
+101,7,101000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Index year = 2018
+102,7,102000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Index year = 2018
+103,7,103000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Index year = 2018
+104,7,104000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Index year = 2018
+105,7,105000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Index year = 2018
+106,7,106000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Index year = 2018
+107,7,107000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Index year = 2018
+108,7,108000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Index year = 2018
+109,7,109000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Index year = 2018
+110,7,110000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Index year = 2018
+111,7,111000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Index year = 2018
+112,7,112000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Index year = 2018
+113,7,113000071,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Index year = 2018
+101,8,101000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Index year = 2019
+102,8,102000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Index year = 2019
+103,8,103000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Index year = 2019
+104,8,104000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Index year = 2019
+105,8,105000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Index year = 2019
+106,8,106000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Index year = 2019
+107,8,107000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Index year = 2019
+108,8,108000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Index year = 2019
+109,8,109000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Index year = 2019
+110,8,110000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Index year = 2019
+111,8,111000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Index year = 2019
+112,8,112000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Index year = 2019
+113,8,113000081,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Index year = 2019
+101,9,101000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with Index year = 2020
+102,9,102000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with Index year = 2020
+103,9,103000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with Index year = 2020
+104,9,104000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with Index year = 2020
+105,9,105000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with Index year = 2020
+106,9,106000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with Index year = 2020
+107,9,107000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with Index year = 2020
+108,9,108000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with Index year = 2020
+109,9,109000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with Index year = 2020
+110,9,110000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with Index year = 2020
+111,9,111000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with Index year = 2020
+112,9,112000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with Index year = 2020
+113,9,113000091,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with Index year = 2020
+101,10,101000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with CCI = 0
+102,10,102000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with CCI = 0
+103,10,103000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with CCI = 0
+104,10,104000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with CCI = 0
+105,10,105000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with CCI = 0
+106,10,106000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with CCI = 0
+107,10,107000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with CCI = 0
+108,10,108000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with CCI = 0
+109,10,109000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with CCI = 0
+110,10,110000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with CCI = 0
+111,10,111000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with CCI = 0
+112,10,112000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with CCI = 0
+113,10,113000101,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with CCI = 0
+101,11,101000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with CCI = 1
+102,11,102000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with CCI = 1
+103,11,103000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with CCI = 1
+104,11,104000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with CCI = 1
+105,11,105000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with CCI = 1
+106,11,106000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with CCI = 1
+107,11,107000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with CCI = 1
+108,11,108000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with CCI = 1
+109,11,109000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with CCI = 1
+110,11,110000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with CCI = 1
+111,11,111000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with CCI = 1
+112,11,112000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with CCI = 1
+113,11,113000111,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with CCI = 1
+101,12,101000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with CCI >= 2
+102,12,102000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with CCI >= 2
+103,12,103000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with CCI >= 2
+104,12,104000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt with CCI >= 2
+105,12,105000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW with CCI >= 2
+106,12,106000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt with CCI >= 2
+107,12,107000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy with CCI >= 2
+108,12,108000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy with CCI >= 2
+109,12,109000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy with CCI >= 2
+110,12,110000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy with CCI >= 2
+111,12,111000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies with CCI >= 2
+112,12,112000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy with CCI >= 2
+113,12,113000121,TwS,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy with CCI >= 2
 101,301,101003011,TwS,[PIONEER FUP] Newly diagnosed prostate cancer with [PIONEER FUP] Obesity
 102,301,102003011,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate conservative trt with [PIONEER FUP] Obesity
 103,301,103003011,TwS,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed conservative trt with [PIONEER FUP] Obesity
