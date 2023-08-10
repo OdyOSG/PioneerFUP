@@ -66,7 +66,6 @@ runStudy <- function(connectionDetails = NULL,
   targetCohortIds  <- cohorts[cohorts$cohortType == "target",  "cohortId"][[1]]
   strataCohortIds  <- cohorts[cohorts$cohortType == "strata",  "cohortId"][[1]]
   outcomeCohortIds <- cohorts[cohorts$cohortType == "outcome", "cohortId"][[1]]
-  treatmentCohortIds <- cohorts[cohorts$cohortType == "treatment", "cohortId"][[1]]
   
   # Start with the target cohorts
   ParallelLogger::logInfo("**********************************************************")
@@ -156,23 +155,6 @@ runStudy <- function(connectionDetails = NULL,
                            featureSummaryTable = featureSummaryTable,
                            oracleTempSchema = oracleTempSchema)
   
-  ParallelLogger::logInfo("**********************************************************")
-  ParallelLogger::logInfo(" ---- Creating treatment cohorts ---- ")
-  ParallelLogger::logInfo("**********************************************************")
-  instantiateCohortSet(connectionDetails = connectionDetails,
-                       connection = connection,
-                       cdmDatabaseSchema = cdmDatabaseSchema,
-                       oracleTempSchema = oracleTempSchema,
-                       cohortDatabaseSchema = cohortDatabaseSchema,
-                       cohortTable = cohortStagingTable,
-                       cohortIds = treatmentCohortIds,
-                       minCellCount = minCellCount,
-                       createCohortTable = FALSE,
-                       generateInclusionStats = FALSE,
-                       incremental = incremental,
-                       incrementalFolder = incrementalFolder,
-                       inclusionStatisticsFolder = exportFolder)
-  
   
   ParallelLogger::logInfo("Saving database metadata")
   database <- data.frame(databaseId = databaseId,
@@ -226,185 +208,81 @@ runStudy <- function(connectionDetails = NULL,
                                 attr(delta, "units")))
   
   
-  # # Generate time to treatment switch info -------------------------------------------------
-  # ParallelLogger::logInfo("Generating time to treatment switch data")
-  # ParallelLogger::logInfo("Create treatment tables")
-  # 
-  # start <- Sys.time()
-  # sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
-  #                                          sqlFilename = "TreatmentComplementaryTables.sql",
-  #                                          packageName = getThisPackageName(),
-  #                                          warnOnMissingParameters = TRUE,
-  #                                          cohort_database_schema = cohortDatabaseSchema,
-  #                                          cdm_database_schema = cdmDatabaseSchema,
-  #                                          treatment_cohort_ids = paste(targetIds, collapse = ', '),
-  #                                          cohort_table = cohortStagingTable
-  #                                          )
-  # DatabaseConnector::executeSql(connection, sql)
-  # 
-  # 
-  # ParallelLogger::logInfo("Get time to treatment switch")
-  # deathCohortId <- events %>% dplyr::filter(name == 'Time to Death') %>% dplyr::pull(outcomeCohortIds)
-  # sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
-  #                                          sqlFilename = "TimeToTreatmentSwitch.sql",
-  #                                          packageName = getThisPackageName(),
-  #                                          warnOnMissingParameters = TRUE,
-  #                                          cohort_database_schema = cohortDatabaseSchema,
-  #                                          cohort_table = cohortStagingTable,
-  #                                          death_cohort_id = deathCohortId
-  #                                          )
-  # data <- DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T)
-  # 
-  # #calculate locality metrics for Time to Treatment Switch
-  # metrics <- data %>%
-  #   dplyr::filter(event == 1) %>% 
-  #   dplyr::select(cohortDefinitionId, timeToEvent) %>% 
-  #   dplyr::group_by(cohortDefinitionId) %>% 
-  #   dplyr::summarise(minimum = min(timeToEvent),
-  #                      q1 = quantile(timeToEvent, 0.25),
-  #                      median = median(timeToEvent),
-  #                      q3 = quantile(timeToEvent, 0.75),
-  #                      maximum = max(timeToEvent)) %>% 
-  #   dplyr::mutate(iqr = q3 - q1, analysisName = "Time to Treatment Switch") %>% 
-  #   dplyr::relocate(iqr, .before = minimum)
-  #   
-  # timeToTreatmentSwitch <- purrr::map_df(targetIds, function(targetId){
-  #   data <- data %>% dplyr::filter(cohortDefinitionId == targetId) %>% dplyr::select(id, timeToEvent, event)
-  #   if (nrow(data) < 30 | length(data$event[data$event == 1]) < 1) {return(NULL)}
-  #   surv_info <- survival::survfit(survival::Surv(timeToEvent, event) ~ 1, data = data)
-  #   surv_info <- survminer::surv_summary(surv_info)
-  #   
-  #   data.frame(targetId = targetId, time = surv_info$time, surv = surv_info$surv, 
-  #              n.censor = surv_info$n.censor, n.event = surv_info$n.event, n.risk = surv_info$n.risk,
-  #              lower = surv_info$lower, upper = surv_info$upper, databaseId = databaseId)
-  # })
-  # 
-  # if (nrow(timeToTreatmentSwitch)>0){
-  #   andrData$cohort_time_to_treatment_switch <- timeToTreatmentSwitch
-  # }
-  # else (
-  #   ParallelLogger::logInfo("No results from timeToTreatmentSwitch. All the target cohort counts are to low (<30) or no treatment switch events.")
-  # )  
-  # 
-  # ParallelLogger::logInfo("Get sankey data")
-  # sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
-  #                                          sqlFilename = "Sankey.sql",
-  #                                          packageName = getThisPackageName(),
-  #                                          warnOnMissingParameters = TRUE,
-  #                                          cohort_database_schema = cohortDatabaseSchema,
-  #                                          second_line_treatment_gap = '0'
-  #                                          )
-  # data = DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T)
-  # 
-  # data = data %>% 
-  #   dplyr::group_by(cohortId, id) %>% 
-  #   dplyr::mutate(first_line = paste(beforeCodesetTag, collapse = " ")) %>%
-  #   dplyr::mutate(second_line = paste(afterCodesetTag, collapse = " ")) %>%
-  #   dplyr::select(id, cohortId, first_line, second_line) %>%
-  #   dplyr::distinct() %>%
-  #   dplyr::mutate(first_line = formatPattern(first_line)) %>%
-  #   dplyr::mutate(second_line = formatPattern(second_line))
-  # 
-  # treatmentPatternMap <- data.frame(name = unique(data$first_line))
-  # treatmentPatternMap$code <- 1:nrow(treatmentPatternMap)
-  # sankeyData <- dplyr::inner_join(data, treatmentPatternMap, by = c('first_line' = 'name')) %>% 
-  #   dplyr::rename('sourceId' = 'code') %>%
-  #   dplyr::rename('sourceName' = 'first_line')
-  # 
-  # rowCount <- nrow(treatmentPatternMap)
-  # treatmentPatternMap <- data.frame(name = unique(data$second_line))
-  # treatmentPatternMap$code <- (rowCount + 1):(nrow(treatmentPatternMap) + rowCount)
-  # sankeyData <- dplyr::inner_join(sankeyData, treatmentPatternMap, by = c('second_line' = 'name')) %>%
-  #   dplyr::rename('targetId' = 'code') %>%
-  #   dplyr::rename('targetName' = 'second_line')
-  # 
-  # sankeyData <- sankeyData %>%
-  #   dplyr::group_by(cohortId, sourceName, targetName, sourceId, targetId) %>%
-  #   dplyr::summarise(value = dplyr::n()) %>%
-  #   dplyr::filter(sourceName != 'discontinued') %>% 
-  #   dplyr::select_all()
-  # sankeyData$databaseId = databaseId
-  # andrData$treatment_sankey <- sankeyData
-  # 
-  # delta <- Sys.time() - start
-  # ParallelLogger::logInfo(paste("Generating time to treatment switch data took",
-  #                               signif(delta, 3),
-  #                               attr(delta, "units")))
-  # 
-  # # Locality estimation of some time periods ------------------------------------------------
-  # # median follow-up time
-  # ParallelLogger::logInfo("Time periods locality estimation")
-  # start <- Sys.time()
-  # 
-  # ParallelLogger::logInfo("Creating auxiliary tables")
-  # sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
-  #                                          sqlFilename = file.path("quartiles", "IQRComplementaryTables.sql"),
-  #                                          packageName = getThisPackageName(),
-  #                                          warnOnMissingParameters = TRUE,
-  #                                          cdm_database_schema = cdmDatabaseSchema,
-  #                                          cohort_database_schema = cohortDatabaseSchema,
-  #                                          cohort_table = cohortTable,
-  #                                          target_ids = paste(targetIds, collapse = ', '))
-  # DatabaseConnector::executeSql(connection, sql)
-  # 
-  # 
-  # 
-  # sqlAggreg <- SqlRender::loadRenderTranslateSql(
-  #   dbms = connection@dbms,
-  #   sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
-  #   packageName = getThisPackageName(),
-  #   warnOnMissingParameters = TRUE,
-  #   analysis_name = "Age at Diagnosis")
-  # sql <- SqlRender::loadRenderTranslateSql(
-  #   dbms = connection@dbms,
-  #   sqlFilename = file.path("quartiles", "AgeAtDiagnosis.sql"),
-  #   packageName = getThisPackageName(),
-  #   warnOnMissingParameters = TRUE,
-  #   cohort_database_schema = cohortDatabaseSchema)
-  # sql <- paste0(sql, sqlAggreg)
-  # metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
-  # 
-  # 
-  # 
-  # 
-  # sqlAggreg <- SqlRender::loadRenderTranslateSql(
-  #   dbms = connection@dbms,
-  #   sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
-  #   packageName = getThisPackageName(),
-  #   warnOnMissingParameters = TRUE,
-  #   analysis_name = "CCI at Diagnosis")
-  # sql <- SqlRender::loadRenderTranslateSql(
-  #   dbms = connection@dbms,
-  #   sqlFilename = file.path("quartiles", "CharlsonAtDiagnosis.sql"),
-  #   packageName = getThisPackageName(),
-  #   warnOnMissingParameters = TRUE,
-  #   cohort_database_schema = cohortDatabaseSchema)
-  # sql <- paste0(sql, sqlAggreg)
-  # metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
-  # 
-  # 
-  # 
-  # 
-  # sqlAggreg <- SqlRender::loadRenderTranslateSql(
-  #   dbms = connection@dbms,
-  #   sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
-  #   packageName = getThisPackageName(),
-  #   warnOnMissingParameters = TRUE,
-  #   analysis_name = "Follow up Time")
-  # sql <- SqlRender::loadRenderTranslateSql(
-  #   dbms = connection@dbms,
-  #   sqlFilename = file.path("quartiles", "MedianFollowUp.sql"),
-  #   packageName = getThisPackageName(),
-  #   warnOnMissingParameters = TRUE,
-  #   cohort_database_schema = cohortDatabaseSchema,
-  #   cohort_table = cohortTable,
-  #   target_ids = paste(targetIds, collapse = ', '))
-  # sql <- paste0(sql, sqlAggreg)
-  # metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
-  # 
-  # 
-  # 
-  # 
+
+  # Locality estimation of some time periods ------------------------------------------------
+  # median follow-up time
+  ParallelLogger::logInfo("Time periods locality estimation")
+  start <- Sys.time()
+
+  ParallelLogger::logInfo("Creating auxiliary tables")
+  sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
+                                           sqlFilename = file.path("quartiles", "IQRComplementaryTables.sql"),
+                                           packageName = getThisPackageName(),
+                                           warnOnMissingParameters = TRUE,
+                                           cdm_database_schema = cdmDatabaseSchema,
+                                           cohort_database_schema = cohortDatabaseSchema,
+                                           cohort_table = cohortTable,
+                                           target_ids = paste(targetIds, collapse = ', '))
+  DatabaseConnector::executeSql(connection, sql)
+
+
+
+  sqlAggreg <- SqlRender::loadRenderTranslateSql(
+    dbms = connection@dbms,
+    sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
+    packageName = getThisPackageName(),
+    warnOnMissingParameters = TRUE,
+    analysis_name = "Age at Diagnosis")
+  sql <- SqlRender::loadRenderTranslateSql(
+    dbms = connection@dbms,
+    sqlFilename = file.path("quartiles", "AgeAtDiagnosis.sql"),
+    packageName = getThisPackageName(),
+    warnOnMissingParameters = TRUE,
+    cohort_database_schema = cohortDatabaseSchema)
+  sql <- paste0(sql, sqlAggreg)
+  metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
+
+
+
+
+  sqlAggreg <- SqlRender::loadRenderTranslateSql(
+    dbms = connection@dbms,
+    sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
+    packageName = getThisPackageName(),
+    warnOnMissingParameters = TRUE,
+    analysis_name = "CCI at Diagnosis")
+  sql <- SqlRender::loadRenderTranslateSql(
+    dbms = connection@dbms,
+    sqlFilename = file.path("quartiles", "CharlsonAtDiagnosis.sql"),
+    packageName = getThisPackageName(),
+    warnOnMissingParameters = TRUE,
+    cohort_database_schema = cohortDatabaseSchema)
+  sql <- paste0(sql, sqlAggreg)
+  metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
+
+
+
+
+  sqlAggreg <- SqlRender::loadRenderTranslateSql(
+    dbms = connection@dbms,
+    sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
+    packageName = getThisPackageName(),
+    warnOnMissingParameters = TRUE,
+    analysis_name = "Follow up Time")
+  sql <- SqlRender::loadRenderTranslateSql(
+    dbms = connection@dbms,
+    sqlFilename = file.path("quartiles", "MedianFollowUp.sql"),
+    packageName = getThisPackageName(),
+    warnOnMissingParameters = TRUE,
+    cohort_database_schema = cohortDatabaseSchema,
+    cohort_table = cohortTable,
+    target_ids = paste(targetIds, collapse = ', '))
+  sql <- paste0(sql, sqlAggreg)
+  metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
+
+
+
+
   # sqlAggreg <- SqlRender::loadRenderTranslateSql(
   #   dbms = connection@dbms,
   #   sqlFilename = file.path("quartiles", "QuartilesAggregation.sql"),
@@ -422,27 +300,27 @@ runStudy <- function(connectionDetails = NULL,
   #   target_ids = paste(targetIds, collapse = ', '))
   # sql <- paste0(sql, sqlAggreg)
   # metrics <- rbind(metrics, DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T))
-  # 
-  # 
-  # 
-  # 
-  # metrics <- metrics %>% dplyr::mutate(databaseId = databaseId) 
-  # andrData$metrics_distribution <- metrics
-  # 
-  # # drop treatment complementary tables
-  # sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
-  #                                          sqlFilename = "TreatmentTablesDrop.sql",
-  #                                          packageName = getThisPackageName(),
-  #                                          warnOnMissingParameters = TRUE,
-  #                                          cohort_database_schema = cohortDatabaseSchema
-  #                                         )
-  # DatabaseConnector::executeSql(connection, sql)
-  # 
-  # sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
-  #                                          sqlFilename = file.path("quartiles", "RemoveComplementaryTables.sql"),
-  #                                          packageName = getThisPackageName(),
-  #                                          cohort_database_schema = cohortDatabaseSchema)
-  # DatabaseConnector::executeSql(connection, sql)
+
+
+
+
+  metrics <- metrics %>% dplyr::mutate(databaseId = databaseId)
+  andrData$metrics_distribution <- metrics
+
+  # drop treatment complementary tables
+  sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
+                                           sqlFilename = "TreatmentTablesDrop.sql",
+                                           packageName = getThisPackageName(),
+                                           warnOnMissingParameters = TRUE,
+                                           cohort_database_schema = cohortDatabaseSchema
+                                          )
+  DatabaseConnector::executeSql(connection, sql)
+
+  sql <- SqlRender::loadRenderTranslateSql(dbms = connection@dbms,
+                                           sqlFilename = file.path("quartiles", "RemoveComplementaryTables.sql"),
+                                           packageName = getThisPackageName(),
+                                           cohort_database_schema = cohortDatabaseSchema)
+  DatabaseConnector::executeSql(connection, sql)
   
   
   # Generate Treatment Type Pathways info --------------------------------------------------
