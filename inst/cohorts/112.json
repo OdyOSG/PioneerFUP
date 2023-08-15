@@ -4491,6 +4491,7 @@
 						"Criteria" : {
 							"ConditionOccurrence" : {
 								"CodesetId" : 14,
+								"First" : true,
 								"ConditionTypeExclude" : false
 							}
 						},
@@ -4500,7 +4501,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4536,7 +4537,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4572,7 +4573,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4580,8 +4581,8 @@
 						"RestrictVisit" : false,
 						"IgnoreObservationPeriod" : false,
 						"Occurrence" : {
-							"Type" : 2,
-							"Count" : 1,
+							"Type" : 0,
+							"Count" : 0,
 							"IsDistinct" : false
 						}
 					},
@@ -4598,7 +4599,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4624,7 +4625,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4650,7 +4651,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4676,7 +4677,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4702,7 +4703,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4737,8 +4738,8 @@
 								"Coeff" : -1
 							},
 							"End" : {
-								"Days" : 0,
-								"Coeff" : 1
+								"Days" : 1,
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4764,7 +4765,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4799,8 +4800,8 @@
 								"Coeff" : -1
 							},
 							"End" : {
-								"Days" : 0,
-								"Coeff" : 1
+								"Days" : 1,
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4825,8 +4826,8 @@
 								"Coeff" : -1
 							},
 							"End" : {
-								"Days" : 0,
-								"Coeff" : 1
+								"Days" : 1,
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4862,7 +4863,7 @@
 							},
 							"End" : {
 								"Days" : 0,
-								"Coeff" : 1
+								"Coeff" : -1
 							},
 							"UseIndexEnd" : false,
 							"UseEventEnd" : false
@@ -4894,7 +4895,7 @@
 						},
 						"StartWindow" : {
 							"Start" : {
-								"Days" : 1,
+								"Days" : 0,
 								"Coeff" : 1
 							},
 							"End" : {
@@ -4921,7 +4922,7 @@
 						},
 						"StartWindow" : {
 							"Start" : {
-								"Days" : 1,
+								"Days" : 0,
 								"Coeff" : -1
 							},
 							"End" : {
@@ -4958,7 +4959,7 @@
 						},
 						"StartWindow" : {
 							"Start" : {
-								"Days" : 1,
+								"Days" : 0,
 								"Coeff" : 1
 							},
 							"End" : {
@@ -4985,7 +4986,7 @@
 						},
 						"StartWindow" : {
 							"Start" : {
-								"Days" : 1,
+								"Days" : 0,
 								"Coeff" : -1
 							},
 							"End" : {
