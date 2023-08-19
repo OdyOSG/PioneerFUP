@@ -754,49 +754,45 @@ GROUP BY p.person_id, p.event_id
 HAVING COUNT(cc.event_id) = 0
 -- End Correlated Criteria
 
-  ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
-  GROUP BY E.person_id, E.event_id
-  HAVING COUNT(index_id) = 6
-) G
--- End Criteria Group
-) AC on AC.person_id = pe.person_id and AC.event_id = pe.event_id
-
-) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc 
-GROUP BY cc.person_id, cc.event_id
-HAVING COUNT(cc.event_id) >= 1
--- End Correlated Criteria
-
-  ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
-  GROUP BY E.person_id, E.event_id
-  HAVING COUNT(index_id) = 1
-) G
--- End Criteria Group
-) AC on AC.person_id = pe.person_id AND AC.event_id = pe.event_id
-) Results
-;
-
-select 3 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_3
+UNION ALL
+-- Begin Correlated Criteria
+select 6 as index_id, p.person_id, p.event_id
+from (SELECT Q.person_id, Q.event_id, Q.start_date, Q.end_date, Q.visit_occurrence_id, OP.observation_period_start_date as op_start_date, OP.observation_period_end_date as op_end_date
+FROM (-- Begin Condition Occurrence Criteria
+SELECT C.person_id, C.condition_occurrence_id as event_id, C.condition_start_date as start_date, COALESCE(C.condition_end_date, DATEADD(day,1,C.condition_start_date)) as end_date,
+  C.visit_occurrence_id, C.condition_start_date as sort_date
 FROM 
 (
-  select pe.person_id, pe.event_id
-  FROM #qualified_events pe
-  
-JOIN (
--- Begin Criteria Group
-select 0 as index_id, person_id, event_id
-FROM
-(
-  select E.person_id, E.event_id 
-  FROM #qualified_events E
-  INNER JOIN
-  (
-    -- Begin Correlated Criteria
-select 0 as index_id, p.person_id, p.event_id
-from #qualified_events p
+  SELECT co.* 
+  FROM @cdm_database_schema.CONDITION_OCCURRENCE co
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 14)
+) C
+
+
+-- End Condition Occurrence Criteria
+) Q
+JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
+  and OP.observation_period_start_date <= Q.start_date and OP.observation_period_end_date >= Q.start_date
+) p
 LEFT JOIN (
 SELECT p.person_id, p.event_id 
-FROM #qualified_events P
+FROM (SELECT Q.person_id, Q.event_id, Q.start_date, Q.end_date, Q.visit_occurrence_id, OP.observation_period_start_date as op_start_date, OP.observation_period_end_date as op_end_date
+FROM (-- Begin Condition Occurrence Criteria
+SELECT C.person_id, C.condition_occurrence_id as event_id, C.condition_start_date as start_date, COALESCE(C.condition_end_date, DATEADD(day,1,C.condition_start_date)) as end_date,
+  C.visit_occurrence_id, C.condition_start_date as sort_date
+FROM 
+(
+  SELECT co.* 
+  FROM @cdm_database_schema.CONDITION_OCCURRENCE co
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 14)
+) C
+
+
+-- End Condition Occurrence Criteria
+) Q
+JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
+  and OP.observation_period_start_date <= Q.start_date and OP.observation_period_end_date >= Q.start_date
+) P
 JOIN (
   -- Begin Condition Occurrence Criteria
 SELECT C.person_id, C.condition_occurrence_id as event_id, C.condition_start_date as start_date, COALESCE(C.condition_end_date, DATEADD(day,1,C.condition_start_date)) as end_date,
@@ -818,6 +814,18 @@ HAVING COUNT(cc.event_id) = 0
 
   ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
   GROUP BY E.person_id, E.event_id
+  HAVING COUNT(index_id) = 7
+) G
+-- End Criteria Group
+) AC on AC.person_id = pe.person_id and AC.event_id = pe.event_id
+
+) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc 
+GROUP BY cc.person_id, cc.event_id
+HAVING COUNT(cc.event_id) >= 1
+-- End Correlated Criteria
+
+  ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
+  GROUP BY E.person_id, E.event_id
   HAVING COUNT(index_id) = 1
 ) G
 -- End Criteria Group
@@ -825,8 +833,8 @@ HAVING COUNT(cc.event_id) = 0
 ) Results
 ;
 
-select 4 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_4
+select 3 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_3
 FROM 
 (
   select pe.person_id, pe.event_id
@@ -1011,8 +1019,8 @@ HAVING COUNT(cc.event_id) = 0
 ) Results
 ;
 
-select 5 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_5
+select 4 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_4
 FROM 
 (
   select pe.person_id, pe.event_id
@@ -1087,8 +1095,8 @@ HAVING COUNT(cc.event_id) = 0
 ) Results
 ;
 
-select 6 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_6
+select 5 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_5
 FROM 
 (
   select pe.person_id, pe.event_id
@@ -1164,8 +1172,8 @@ HAVING COUNT(cc.event_id) = 0
 ) Results
 ;
 
-select 7 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_7
+select 6 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_6
 FROM 
 (
   select pe.person_id, pe.event_id
@@ -1228,9 +1236,7 @@ select inclusion_rule_id, person_id, event_id from #Inclusion_4
 UNION ALL
 select inclusion_rule_id, person_id, event_id from #Inclusion_5
 UNION ALL
-select inclusion_rule_id, person_id, event_id from #Inclusion_6
-UNION ALL
-select inclusion_rule_id, person_id, event_id from #Inclusion_7) I;
+select inclusion_rule_id, person_id, event_id from #Inclusion_6) I;
 TRUNCATE TABLE #Inclusion_0;
 DROP TABLE #Inclusion_0;
 
@@ -1252,9 +1258,6 @@ DROP TABLE #Inclusion_5;
 TRUNCATE TABLE #Inclusion_6;
 DROP TABLE #Inclusion_6;
 
-TRUNCATE TABLE #Inclusion_7;
-DROP TABLE #Inclusion_7;
-
 
 select event_id, person_id, start_date, end_date, op_start_date, op_end_date
 into #included_events
@@ -1269,7 +1272,7 @@ FROM (
   ) MG -- matching groups
 
   -- the matching group with all bits set ( POWER(2,# of inclusion rules) - 1 = inclusion_rule_mask
-  WHERE (MG.inclusion_rule_mask = POWER(cast(2 as bigint),8)-1)
+  WHERE (MG.inclusion_rule_mask = POWER(cast(2 as bigint),7)-1)
 
 ) Results
 WHERE Results.ordinal = 1
