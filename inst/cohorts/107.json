@@ -4449,6 +4449,17 @@
 												"UseIndexEnd" : false,
 												"UseEventEnd" : false
 											},
+											"EndWindow" : {
+												"Start" : {
+													"Days" : 0,
+													"Coeff" : -1
+												},
+												"End" : {
+													"Coeff" : 1
+												},
+												"UseIndexEnd" : false,
+												"UseEventEnd" : true
+											},
 											"RestrictVisit" : false,
 											"IgnoreObservationPeriod" : false,
 											"Occurrence" : {
