@@ -5,6 +5,7 @@
 			{
 				"ConditionOccurrence" : {
 					"CodesetId" : 0,
+					"First" : true,
 					"ConditionTypeExclude" : false,
 					"Gender" : [
 						{
@@ -24,7 +25,7 @@
 			}
 		],
 		"ObservationWindow" : {
-			"PriorDays" : 365,
+			"PriorDays" : 0,
 			"PostDays" : 0
 		},
 		"PrimaryCriteriaLimit" : {
