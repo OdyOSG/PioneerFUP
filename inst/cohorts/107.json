@@ -4670,32 +4670,6 @@
 					{
 						"Criteria" : {
 							"DrugExposure" : {
-								"CodesetId" : 22,
-								"DrugTypeExclude" : false
-							}
-						},
-						"StartWindow" : {
-							"Start" : {
-								"Coeff" : -1
-							},
-							"End" : {
-								"Days" : 90,
-								"Coeff" : 1
-							},
-							"UseIndexEnd" : false,
-							"UseEventEnd" : false
-						},
-						"RestrictVisit" : false,
-						"IgnoreObservationPeriod" : false,
-						"Occurrence" : {
-							"Type" : 0,
-							"Count" : 0,
-							"IsDistinct" : false
-						}
-					},
-					{
-						"Criteria" : {
-							"DrugExposure" : {
 								"CodesetId" : 31,
 								"DrugTypeExclude" : false
 							}

@@ -4006,6 +4006,48 @@
 					}
 				]
 			}
+		},
+		{
+			"id" : 31,
+			"name" : "[PIONEER] Prior Prostate Ca related obs/condition",
+			"expression" : {
+				"items" : [
+					{
+						"concept" : {
+							"CONCEPT_ID" : 40482030,
+							"CONCEPT_NAME" : "Dysplasia of prostate",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "445068007",
+							"DOMAIN_ID" : "Condition",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Clinical Finding"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : false,
+						"includeMapped" : false
+					},
+					{
+						"concept" : {
+							"CONCEPT_ID" : 4180749,
+							"CONCEPT_NAME" : "History of malignant neoplasm of prostate",
+							"STANDARD_CONCEPT" : "S",
+							"STANDARD_CONCEPT_CAPTION" : "Standard",
+							"INVALID_REASON" : "V",
+							"INVALID_REASON_CAPTION" : "Valid",
+							"CONCEPT_CODE" : "428262008",
+							"DOMAIN_ID" : "Observation",
+							"VOCABULARY_ID" : "SNOMED",
+							"CONCEPT_CLASS_ID" : "Context-dependent"
+						},
+						"isExcluded" : false,
+						"includeDescendants" : false,
+						"includeMapped" : false
+					}
+				]
+			}
 		}
 	],
 	"QualifiedLimit" : {
@@ -4126,6 +4168,72 @@
 											"Occurrence" : {
 												"Type" : 2,
 												"Count" : 1,
+												"IsDistinct" : false
+											}
+										},
+										{
+											"Criteria" : {
+												"ConditionOccurrence" : {
+													"CodesetId" : 31,
+													"ConditionTypeExclude" : false
+												}
+											},
+											"StartWindow" : {
+												"Start" : {
+													"Coeff" : -1
+												},
+												"End" : {
+													"Days" : 1,
+													"Coeff" : -1
+												},
+												"UseIndexEnd" : false,
+												"UseEventEnd" : false
+											},
+											"RestrictVisit" : false,
+											"IgnoreObservationPeriod" : false,
+											"Occurrence" : {
+												"Type" : 0,
+												"Count" : 0,
+												"IsDistinct" : false
+											}
+										},
+										{
+											"Criteria" : {
+												"Observation" : {
+													"CodesetId" : 31,
+													"ObservationTypeExclude" : false,
+													"ValueAsConcept" : [
+														{
+															"CONCEPT_ID" : 4253628,
+															"CONCEPT_NAME" : "Known present",
+															"STANDARD_CONCEPT" : null,
+															"STANDARD_CONCEPT_CAPTION" : "Unknown",
+															"INVALID_REASON" : null,
+															"INVALID_REASON_CAPTION" : "Unknown",
+															"CONCEPT_CODE" : "410515003",
+															"DOMAIN_ID" : "Observation",
+															"VOCABULARY_ID" : "SNOMED",
+															"CONCEPT_CLASS_ID" : null
+														}
+													]
+												}
+											},
+											"StartWindow" : {
+												"Start" : {
+													"Coeff" : -1
+												},
+												"End" : {
+													"Days" : 1,
+													"Coeff" : -1
+												},
+												"UseIndexEnd" : false,
+												"UseEventEnd" : false
+											},
+											"RestrictVisit" : false,
+											"IgnoreObservationPeriod" : false,
+											"Occurrence" : {
+												"Type" : 0,
+												"Count" : 0,
 												"IsDistinct" : false
 											}
 										}
