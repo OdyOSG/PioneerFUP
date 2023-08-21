@@ -4236,32 +4236,6 @@
 												"Count" : 0,
 												"IsDistinct" : false
 											}
-										},
-										{
-											"Criteria" : {
-												"ConditionOccurrence" : {
-													"CodesetId" : 13,
-													"ConditionTypeExclude" : false
-												}
-											},
-											"StartWindow" : {
-												"Start" : {
-													"Coeff" : -1
-												},
-												"End" : {
-													"Days" : 0,
-													"Coeff" : -1
-												},
-												"UseIndexEnd" : false,
-												"UseEventEnd" : false
-											},
-											"RestrictVisit" : false,
-											"IgnoreObservationPeriod" : false,
-											"Occurrence" : {
-												"Type" : 0,
-												"Count" : 0,
-												"IsDistinct" : false
-											}
 										}
 									],
 									"DemographicCriteriaList" : [],
@@ -4300,7 +4274,34 @@
 			"name" : "No prior cancer other than prostate",
 			"expression" : {
 				"Type" : "ALL",
-				"CriteriaList" : [],
+				"CriteriaList" : [
+					{
+						"Criteria" : {
+							"ConditionOccurrence" : {
+								"CodesetId" : 13,
+								"ConditionTypeExclude" : false
+							}
+						},
+						"StartWindow" : {
+							"Start" : {
+								"Coeff" : -1
+							},
+							"End" : {
+								"Days" : 0,
+								"Coeff" : 1
+							},
+							"UseIndexEnd" : false,
+							"UseEventEnd" : false
+						},
+						"RestrictVisit" : false,
+						"IgnoreObservationPeriod" : false,
+						"Occurrence" : {
+							"Type" : 0,
+							"Count" : 0,
+							"IsDistinct" : false
+						}
+					}
+				],
 				"DemographicCriteriaList" : [],
 				"Groups" : []
 			}
