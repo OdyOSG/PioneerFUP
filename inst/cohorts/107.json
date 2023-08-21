@@ -4228,6 +4228,7 @@
 		},
 		{
 			"name" : "Prior prostate cancer",
+			"description" : "Prior PCa diagnosis with no other malignancies and prior history of PCa. Make sure for at least 1 year of observation before PCa diagnosis\n",
 			"expression" : {
 				"Type" : "ALL",
 				"CriteriaList" : [
@@ -4266,9 +4267,9 @@
 										},
 										{
 											"Criteria" : {
-												"DrugExposure" : {
-													"CodesetId" : 31,
-													"DrugTypeExclude" : false
+												"ConditionOccurrence" : {
+													"CodesetId" : 13,
+													"ConditionTypeExclude" : false
 												}
 											},
 											"StartWindow" : {
@@ -4276,59 +4277,7 @@
 													"Coeff" : -1
 												},
 												"End" : {
-													"Days" : 1,
-													"Coeff" : -1
-												},
-												"UseIndexEnd" : false,
-												"UseEventEnd" : false
-											},
-											"RestrictVisit" : false,
-											"IgnoreObservationPeriod" : false,
-											"Occurrence" : {
-												"Type" : 0,
-												"Count" : 0,
-												"IsDistinct" : false
-											}
-										},
-										{
-											"Criteria" : {
-												"Observation" : {
-													"CodesetId" : 31,
-													"ObservationTypeExclude" : false
-												}
-											},
-											"StartWindow" : {
-												"Start" : {
-													"Coeff" : -1
-												},
-												"End" : {
-													"Days" : 1,
-													"Coeff" : -1
-												},
-												"UseIndexEnd" : false,
-												"UseEventEnd" : false
-											},
-											"RestrictVisit" : false,
-											"IgnoreObservationPeriod" : false,
-											"Occurrence" : {
-												"Type" : 0,
-												"Count" : 0,
-												"IsDistinct" : false
-											}
-										},
-										{
-											"Criteria" : {
-												"ProcedureOccurrence" : {
-													"CodesetId" : 31,
-													"ProcedureTypeExclude" : false
-												}
-											},
-											"StartWindow" : {
-												"Start" : {
-													"Coeff" : -1
-												},
-												"End" : {
-													"Days" : 1,
+													"Days" : 0,
 													"Coeff" : -1
 												},
 												"UseIndexEnd" : false,
@@ -4396,32 +4345,6 @@
 												"End" : {
 													"Days" : 1,
 													"Coeff" : -1
-												},
-												"UseIndexEnd" : false,
-												"UseEventEnd" : false
-											},
-											"RestrictVisit" : false,
-											"IgnoreObservationPeriod" : false,
-											"Occurrence" : {
-												"Type" : 0,
-												"Count" : 0,
-												"IsDistinct" : false
-											}
-										},
-										{
-											"Criteria" : {
-												"ConditionOccurrence" : {
-													"CodesetId" : 13,
-													"ConditionTypeExclude" : false
-												}
-											},
-											"StartWindow" : {
-												"Start" : {
-													"Coeff" : -1
-												},
-												"End" : {
-													"Days" : 0,
-													"Coeff" : 1
 												},
 												"UseIndexEnd" : false,
 												"UseEventEnd" : false
