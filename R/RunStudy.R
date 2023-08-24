@@ -156,6 +156,24 @@ runStudy <- function(connectionDetails = NULL,
                            oracleTempSchema = oracleTempSchema)
   
   
+  ParallelLogger::logInfo("******************************************")
+  ParallelLogger::logInfo("  ---- Creating modality cohorts  ---- ")
+  ParallelLogger::logInfo("******************************************")
+  instantiateCohortSet(connectionDetails = connectionDetails,
+                       connection = connection,
+                       cdmDatabaseSchema = cdmDatabaseSchema,
+                       oracleTempSchema = oracleTempSchema,
+                       cohortDatabaseSchema = cohortDatabaseSchema,
+                       cohortTable = cohortTable,
+                       cohortIds = (501:507),
+                       minCellCount = minCellCount,
+                       createCohortTable = FALSE,
+                       generateInclusionStats = FALSE,
+                       incremental = incremental,
+                       incrementalFolder = incrementalFolder,
+                       inclusionStatisticsFolder = exportFolder)
+  
+  
   ParallelLogger::logInfo("Saving database metadata")
   database <- data.frame(databaseId = databaseId,
                          databaseName = databaseName,
@@ -335,10 +353,10 @@ runStudy <- function(connectionDetails = NULL,
   andrData$treatment_type_time_to_event <- treatmentTypeTimeToEvent
   
   
-  # Generate Treatment Modalities Pathways info
-  ParallelLogger::logInfo("Generating Treatment Modalities Pathways Data")
-  treatmentModalityPathways <- generateTreatmentModalitiesPathwaysInfo(connection, cohortDatabaseSchema, cohortTable, databaseId)
-  andrData$treatment_modality_pathways <- treatmentModalityPathways
+  # # Generate Treatment Modalities Pathways info
+  # ParallelLogger::logInfo("Generating Treatment Modalities Pathways Data")
+  # treatmentModalityPathways <- generateTreatmentModalitiesPathwaysInfo(connection, cohortDatabaseSchema, cohortTable, databaseId)
+  # andrData$treatment_modality_pathways <- treatmentModalityPathways
   
   # Generate Treatment Modalities Time to Event Info
   ParallelLogger::logInfo("Generating Treatment Modalities Time To Event Data")
