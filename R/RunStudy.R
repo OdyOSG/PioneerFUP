@@ -66,6 +66,7 @@ runStudy <- function(connectionDetails = NULL,
   targetCohortIds  <- cohorts[cohorts$cohortType == "target",  "cohortId"][[1]]
   strataCohortIds  <- cohorts[cohorts$cohortType == "strata",  "cohortId"][[1]]
   outcomeCohortIds <- cohorts[cohorts$cohortType == "outcome", "cohortId"][[1]]
+  modalityCohortIds <- cohorts[cohorts$cohortType == "modality", "cohortId"][[1]]
   
   # Start with the target cohorts
   ParallelLogger::logInfo("**********************************************************")
@@ -165,7 +166,7 @@ runStudy <- function(connectionDetails = NULL,
                        oracleTempSchema = oracleTempSchema,
                        cohortDatabaseSchema = cohortDatabaseSchema,
                        cohortTable = cohortTable,
-                       cohortIds = (501:507),
+                       cohortIds = modalityCohortIds,
                        minCellCount = minCellCount,
                        createCohortTable = FALSE,
                        generateInclusionStats = FALSE,
