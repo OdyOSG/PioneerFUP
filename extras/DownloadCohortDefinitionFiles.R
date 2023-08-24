@@ -33,6 +33,7 @@ getCohortDefinitionsFromAtlas <- function(bearer = NULL){
   ROhdsiWebApi::setAuthHeader(baseUrl, bearer)
   
   cohortGroups <- read.csv(file.path("inst/settings/CohortGroups.csv"))
+  
   for (i in 1:nrow(cohortGroups)) {
     ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = file.path('inst', cohortGroups$fileName[i]),
                                                      baseUrl, insertCohortCreationR = FALSE,
