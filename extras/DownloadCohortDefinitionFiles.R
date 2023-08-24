@@ -22,7 +22,7 @@
 
 
 # get this token from an active ATLAS web session
-getCohortDefinitionsFromAtlas <- function(bearer = NULL){
+getCohortDefinitionsFromAtlas <- function(bearer = NULL, additionalGroup = NULL){
   
   if (is.null(bearer)) {
     stop("Provide function call with a bearer token from an active ATLAS web session")
@@ -33,6 +33,12 @@ getCohortDefinitionsFromAtlas <- function(bearer = NULL){
   ROhdsiWebApi::setAuthHeader(baseUrl, bearer)
   
   cohortGroups <- read.csv(file.path("inst/settings/CohortGroups.csv"))
+  if (!is.null(additionalGroup)){
+    additionalCohorts <- data.frame(cohortGroup = additionalGroup,
+                            fileName = file.path("settings", paste0('CohortsToCreate', additionalGroup, '.csv')),
+                            userCanSelect = TRUE)
+    cohortGroups <- rbind(cohortGroups, additionalCohorts)
+  }
   
   for (i in 1:nrow(cohortGroups)) {
     ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = file.path('inst', cohortGroups$fileName[i]),
