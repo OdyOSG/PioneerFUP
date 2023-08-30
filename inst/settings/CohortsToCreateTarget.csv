@@ -5,17 +5,10 @@ name,atlasName,atlasId,cohortId
 104,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt,512,104
 105,[PIONEER FUP] Newly diagnosed prostate cancer initiated immediate curative trt NARROW,547,105
 106,[PIONEER FUP] Newly diagnosed prostate cancer initiated delayed curative trt,511,106
-107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy NARROW,539,107
-108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy NARROW,514,108
-109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy NARROW,513,109
-110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy NARROW,536,110
-111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies NARROW,545,111
-112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy NARROW,531,112
-113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy NARROW,538,113
-114,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy BROAD,963,114
-115,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy BROAD,964,115
-116,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy BROAD,965,116
-117,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy BROAD,966,117
-118,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies BROAD,967,118
-119,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy BROAD,968,119
-120,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy BROAD,969,120
+107,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy,539,107
+108,[PIONEER FUP] Newly diagnosed prostate cancer received radiotherapy,514,108
+109,[PIONEER FUP] Newly diagnosed prostate cancer received systemic chemotherapy,513,109
+110,[PIONEER FUP] Newly diagnosed prostate cancer received focal therapy,536,110
+111,[PIONEER FUP] Newly diagnosed prostate cancer received ADT based doublet or triplet combination therapies,545,111
+112,[PIONEER FUP] Newly diagnosed prostate cancer received prostatectomy plus salvage ADT and radiotherapy,531,112
+113,[PIONEER FUP] Newly diagnosed prostate cancer received postatectomy and adjuvant radiotherapy,538,113
