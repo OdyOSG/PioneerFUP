@@ -1,4 +1,4 @@
-generateTreatmentTypeTimeToEventInfo <- function(connection, cohortDatabaseSchema, cohortTable, databaseId) {
+generateTreatmentTypeTimeToEventInfo <- function(connection, cohortDatabaseSchema, cohortTable, cohortStagingTable, databaseId) {
   targetCohorts <- read.csv(file.path('inst/settings/CohortsToCreateTarget.csv'))
   pathwaysCohorts <- RJSONIO::fromJSON(paste(readLines(file.path('inst/settings/SettingsTreatmentTypePathways.json')), collapse = ""))
   diagnosisCohortId <- pathwaysCohorts$diagnosisCohort$id
@@ -15,6 +15,7 @@ generateTreatmentTypeTimeToEventInfo <- function(connection, cohortDatabaseSchem
   timeToTreatmentType <- generateSurvival(connection = connection,
                                           cohortDatabaseSchema = cohortDatabaseSchema,
                                           cohortTable = cohortTable,
+                                          cohortStagingTable = cohortStagingTable,
                                           targetIds = diagnosisCohortsIds,
                                           events = treatmentCohortsIds,
                                           databaseId = databaseId,

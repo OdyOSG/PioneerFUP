@@ -1,7 +1,8 @@
 #' @importFrom magrittr %>%
 generateSurvival <- function(connection,
                              cohortDatabaseSchema, 
-                             cohortTable, 
+                             cohortTable,
+                             cohortStagingTable,
                              targetIds,
                              events,
                              databaseId,
@@ -17,6 +18,7 @@ generateSurvival <- function(connection,
                                              warnOnMissingParameters = TRUE,
                                              cohort_database_schema = cohortDatabaseSchema,
                                              cohort_table = cohortTable,
+                                             cohort_staging_table = cohortStagingTable,
                                              outcome_ids = outcomeIds, 
                                              target_ids = paste(targetIds, collapse = ', '))
     km_grouped <- DatabaseConnector::querySql(connection, sql, snakeCaseToCamelCase = T)

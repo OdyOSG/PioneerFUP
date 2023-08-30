@@ -133,6 +133,23 @@ runStudy <- function(connectionDetails = NULL,
                    targetIds = targetCohortIds,
                    oracleTempSchema = oracleTempSchema)
   
+  ParallelLogger::logInfo("******************************************")
+  ParallelLogger::logInfo("  ---- Creating modality cohorts  ---- ")
+  ParallelLogger::logInfo("******************************************")
+  instantiateCohortSet(connectionDetails = connectionDetails,
+                       connection = connection,
+                       cdmDatabaseSchema = cdmDatabaseSchema,
+                       oracleTempSchema = oracleTempSchema,
+                       cohortDatabaseSchema = cohortDatabaseSchema,
+                       cohortTable = cohortStagingTable,
+                       cohortIds = modalityCohortIds,
+                       minCellCount = minCellCount,
+                       createCohortTable = FALSE,
+                       generateInclusionStats = FALSE,
+                       incremental = incremental,
+                       incrementalFolder = incrementalFolder,
+                       inclusionStatisticsFolder = exportFolder)
+  
   # Copy and censor cohorts to the final table
   ParallelLogger::logInfo("**********************************************************")
   ParallelLogger::logInfo(" ---- Copy cohorts to main table ---- ")
@@ -156,25 +173,7 @@ runStudy <- function(connectionDetails = NULL,
                            featureSummaryTable = featureSummaryTable,
                            oracleTempSchema = oracleTempSchema)
   
-  
-  ParallelLogger::logInfo("******************************************")
-  ParallelLogger::logInfo("  ---- Creating modality cohorts  ---- ")
-  ParallelLogger::logInfo("******************************************")
-  instantiateCohortSet(connectionDetails = connectionDetails,
-                       connection = connection,
-                       cdmDatabaseSchema = cdmDatabaseSchema,
-                       oracleTempSchema = oracleTempSchema,
-                       cohortDatabaseSchema = cohortDatabaseSchema,
-                       cohortTable = cohortTable,
-                       cohortIds = modalityCohortIds,
-                       minCellCount = minCellCount,
-                       createCohortTable = FALSE,
-                       generateInclusionStats = FALSE,
-                       incremental = incremental,
-                       incrementalFolder = incrementalFolder,
-                       inclusionStatisticsFolder = exportFolder)
-  
-  
+
   ParallelLogger::logInfo("Saving database metadata")
   database <- data.frame(databaseId = databaseId,
                          databaseName = databaseName,
@@ -200,7 +199,7 @@ runStudy <- function(connectionDetails = NULL,
   counts <- dplyr::left_join(x = allStudyCohorts, y = counts, by = "cohortId")
   andrData$cohort_staging_count = counts
 
-  
+
   # Generate survival info -----------------------------------------------------------------
   ParallelLogger::logInfo("Generating time to event data")
   start <- Sys.time()
@@ -209,7 +208,8 @@ runStudy <- function(connectionDetails = NULL,
   events <- getTimeToEventSettings()
   timeToEvent <- generateSurvival(connection = connection,
                                   cohortDatabaseSchema = cohortDatabaseSchema,
-                                  cohortTable = cohortStagingTable,
+                                  cohortTable = cohortTable,
+                                  cohortStagingTable = cohortStagingTable,
                                   targetIds = targetIds,
                                   events = events,
                                   databaseId = databaseId,
@@ -219,14 +219,14 @@ runStudy <- function(connectionDetails = NULL,
   }
   else (
     ParallelLogger::logInfo("No results from timeToEvent. All the target cohort counts are to low (<30) or no outcome events.")
-  )  
+  )
 
   delta <- Sys.time() - start
   ParallelLogger::logInfo(paste("Generating time to event data took",
                                 signif(delta, 3),
                                 attr(delta, "units")))
-  
-  
+
+
 
   # Locality estimation of some time periods ------------------------------------------------
   # median follow-up time
@@ -340,17 +340,17 @@ runStudy <- function(connectionDetails = NULL,
                                            packageName = getThisPackageName(),
                                            cohort_database_schema = cohortDatabaseSchema)
   DatabaseConnector::executeSql(connection, sql)
-  
-  
+
+
   # Generate Treatment Type Pathways info --------------------------------------------------
   ParallelLogger::logInfo("Generating Treatment Type Pathways Data")
   treatmentTypePathways <- generateTreatmentTypePathwaysInfo(connection, cohortDatabaseSchema, cohortTable, databaseId)
   andrData$treatment_type_pathways <- treatmentTypePathways
-  
-  
+
+
   # Generate Treatment Type Time to Event Info
   ParallelLogger::logInfo("Generating Treatment Type Time To Event Data")
-  treatmentTypeTimeToEvent <- generateTreatmentTypeTimeToEventInfo(connection, cohortDatabaseSchema, cohortTable, databaseId)
+  treatmentTypeTimeToEvent <- generateTreatmentTypeTimeToEventInfo(connection, cohortDatabaseSchema, cohortTable, cohortStagingTable, databaseId)
   andrData$treatment_type_time_to_event <- treatmentTypeTimeToEvent
   
   
@@ -361,7 +361,7 @@ runStudy <- function(connectionDetails = NULL,
   
   # Generate Treatment Modalities Time to Event Info
   ParallelLogger::logInfo("Generating Treatment Modalities Time To Event Data")
-  treatmentModalityTimeToEvent <- generateTreatmentModalitiesTimeToEventInfo(connection, cohortDatabaseSchema, cohortTable, databaseId)
+  treatmentModalityTimeToEvent <- generateTreatmentModalitiesTimeToEventInfo(connection, cohortDatabaseSchema, cohortTable, cohortStagingTable, databaseId)
   andrData$treatment_modality_time_to_event <- treatmentModalityTimeToEvent
   
   
