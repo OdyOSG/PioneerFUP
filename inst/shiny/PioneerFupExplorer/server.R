@@ -253,7 +253,7 @@ shinyServer(function(input, output, session) {
   getCohortInfoTable <- reactive({
     data <- cohortInfo
     atlasCohortUrl <- "https://pioneer.hzdr.de/atlas/#/cohortdefinition/"
-    githubCohortUrl <- "https://gitlab.com/gorbachevart/pioneer_follow_up/-/tree/main/inst/sql/sql_server"
+    githubCohortUrl <- "https://github.com/OdyOSG/PioneerFUP/tree/master/inst/sql/sql_server"
     data$url <- ifelse(data$circeDef == TRUE, 
                        paste0(atlasCohortUrl, data$atlasId),
                        paste0(githubCohortUrl, data$cohortId, ".sql"))
