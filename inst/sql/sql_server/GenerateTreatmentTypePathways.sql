@@ -6,6 +6,6 @@ FROM (
          ON coh.subject_id = coh2.subject_id
              AND coh2.cohort_definition_id IN (@treatment_cohorts_ids)
      ) tab
-WHERE source_id IN (@diagnosis_cohort_ids)
+WHERE cohort_definition_id IN (@diagnosis_cohort_ids)
 GROUP BY cohort_definition_id, target_cohort_id
 ORDER BY cohort_definition_id, target_cohort_id;
